@@ -1,0 +1,18 @@
+* {
+    color: white;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./static/background.png');
+}
+
+.main-header {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    /* font-family: 'Gugi', cursive; */
+    font-size: 20px;
+    margin-top: 15px;
+}

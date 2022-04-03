@@ -1,8 +1,9 @@
 import './App.css';
+import Badges from './badges/Badges';
 
 function App() {
     return (    
-        <h1>Aisaretai</h1>
+        <Badges />
     )
 }
 
