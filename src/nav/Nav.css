@@ -1,11 +1,26 @@
-.navigation {
-    margin: 0;
-    padding: 0;
-    display: flex;
+nav {
     position: absolute;
+    margin: 1vw;
+    width: 98vw;
+    background-color: rgba(14, 0, 33, 0.7);
+    box-shadow: 0 0 10px black;
+    justify-content: center;
 }
 
-.navigation a {
+.main-name {
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 50px;
+}
+
+.navigation {
+    padding: 10px;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.flash-text {
     position: relative; 
     display: block;
     width: 60px;
@@ -19,7 +34,7 @@
     transition: .5s;
 }
 
-.navigation a::before {
+.flash-text::before {
     content: '';
     position: absolute;
     top: 0;
@@ -27,21 +42,21 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #ffee10;
+    background: #ff571a;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
 }
 
-.navigation a:hover::before {
+.flash-text:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #ffee10;
+    box-shadow: 0 0 15px #ff571a;
 }
 
-.navigation a:hover {
-    color: #ffee10;
-    box-shadow: 0 0 5px #ffee10;
-    text-shadow: 0 0 5px #ffee10;
+.flash-text:hover {
+    color: #ff571a;
+    box-shadow: 0 0 5px #ff571a;
+    text-shadow: 0 0 5px #ff571a;
 }
 
 i {
