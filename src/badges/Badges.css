@@ -1,13 +1,22 @@
 .badges {
     position: absolute;
-    left: 5vw; top: 10vh;
-    box-shadow: 0 0 5px black;
+    left: 5vw; top: 20vh;
+    box-shadow: 0 0 60px black;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     display: flex; flex-direction: column;
+    align-items: center;
+}
+
+#main-logo {
+    min-width: 200px;
+    margin-bottom: 40px;
 }
 
 .badges img {
-    max-width: 200px;
+    max-width: 150px;
+}
+
+.badges a {
     margin-bottom: 30px;
 }
