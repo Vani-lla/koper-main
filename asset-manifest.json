@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/koper-main/static/css/main.9184d9ce.css",
+    "main.js": "/koper-main/static/js/main.3800e8cc.js",
+    "static/media/background.png": "/koper-main/static/media/background.ac3dc92d4b011cccf4ac.png",
+    "static/media/logo_new.png": "/koper-main/static/media/logo_new.c145079058a3f09d8d6c.png",
+    "static/media/rekrut.png": "/koper-main/static/media/rekrut.b904e7c5a2048ea81dd2.png",
+    "static/media/sr22.png": "/koper-main/static/media/sr22.227a5b6d333ce33dcc63.png",
+    "index.html": "/koper-main/index.html",
+    "main.9184d9ce.css.map": "/koper-main/static/css/main.9184d9ce.css.map",
+    "main.3800e8cc.js.map": "/koper-main/static/js/main.3800e8cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9184d9ce.css",
+    "static/js/main.3800e8cc.js"
+  ]
+}
