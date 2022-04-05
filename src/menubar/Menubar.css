@@ -1,0 +1,38 @@
+.menu-links {
+    position: absolute;
+    right: 5vw;
+    top: 70vh;
+    width: 200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 60px black;
+    box-sizing: content-box;
+
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: repeat(3, 100px);
+}
+
+
+.flash-text-nav {
+    font-size: 30px;
+    color: whitesmoke;
+    font-size: 60px;
+    transition: .5s;
+}
+
+.flash-text-nav:hover {
+    color: #ff571a;
+    text-shadow: 0 0 5px #ff571a;
+    transform: scale(1.1);
+}
+
+i {
+    color: inherit;
+}
+
+.menu-links div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
