@@ -1,0 +1,67 @@
+#graphs {
+    position: absolute;
+    right: 5vw; top: 25vh;
+    box-shadow: 0 0 60px black;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: flex;
+    width: 200px; height: 300px;
+    box-sizing: content-box;
+}
+
+.graph {
+    width: 100%; height: 200px;
+}
+
+.value-line {
+    height: calc(100% - 2px);
+    width: 2px;
+    background-color: whitesmoke;
+}
+
+.base-line {
+    height: 2px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.slupek {
+    width: 40px;
+    position: absolute;
+}
+
+.koper-value {
+    background-color: #ff571a;
+    transform: translate(40px, calc(-2px - 100%));
+}
+
+.poland-value {
+    background-color: #68637B;
+    transform: translate(120px, calc(-2px - 100%));
+}
+
+.graph-subject {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* .graph-legend {
+    
+} */
+
+.legend {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.legend-color {
+    width: 20px; height: 20px;
+}
+
+.legend-koper {
+    background-color: #ff571a;
+}
+
+.legend-poland {
+    background-color: #68637B;
+}
