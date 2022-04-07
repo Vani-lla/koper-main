@@ -3,9 +3,9 @@ import './Nav.css'
 
 export default function Nav() {
     return (
-        <nav>
+        <nav className='tile'>
             <h1 className='main-name'>
-                II Liceum Ogólno Kształcące im. Mikołaja Kopernika
+                II Liceum Ogólnokształcące im. Mikołaja Kopernika
             </h1>
             <div className='navigation'>
                 <div className='nav-topic' id='first-nav'>

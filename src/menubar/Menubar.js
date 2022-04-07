@@ -3,7 +3,7 @@ import './Menubar.css'
 
 export default function Menubar() {
     return (
-        <div className='menu-links'>
+        <div className='menu-links tile'>
             <div id='first-grid-nav'>
                 <a title='Facebook' className='flash-text-nav' href='https://www.facebook.com/kopercieszyn'>
                     <i className='fab fa-facebook-square'></i>

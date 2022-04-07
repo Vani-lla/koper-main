@@ -42,7 +42,7 @@ export default class Graphs extends Component {
     render() {
         if (!this.state.loading) {
             return (
-                <div id='graphs'>
+                <div className='tile' id='graphs'>
                     {this.graph(this.state.data[this.state.g])}
                     {this.state.data.map((graph_data, index) => {
                         if (this.state.g === index) {

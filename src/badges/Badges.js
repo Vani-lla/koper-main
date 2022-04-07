@@ -6,7 +6,7 @@ import './Badges.css'
 
 export default function Badges() {
     return (
-        <div className='badges'>
+        <div className='badges tile'>
             <img id="main-logo" src={logo} alt='main logo'/>
             <a href='https://licea.perspektywy.pl/2022/rankings'>
                 <img src={silver} alt='silver badge'/>

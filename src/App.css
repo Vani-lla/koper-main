@@ -1,0 +1,5 @@
+.tile {
+    background-color: rgba(14, 0, 33, 0.7);
+    box-shadow: 0 0 60px black;
+    backdrop-filter: blur(5px);
+}

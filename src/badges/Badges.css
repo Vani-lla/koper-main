@@ -1,8 +1,6 @@
 .badges {
     position: absolute;
     left: 5vw; top: 25vh;
-    box-shadow: 0 0 60px black;
-    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     display: flex; flex-direction: column;
     align-items: center;

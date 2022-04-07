@@ -2,8 +2,6 @@ nav {
     position: absolute;
     margin: 1vw;
     width: 98vw;
-    background-color: rgba(14, 0, 33, 0.7);
-    box-shadow: 0 0 10px black;
 }
 
 .main-name {

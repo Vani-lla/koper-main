@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import './Articles.css'
 
 const url = 'https://koper.edu.pl/Api/artykul2.php';
@@ -11,7 +11,8 @@ export default class Articles extends Component {
         this.state = {
             loading: true,
             data: [],
-            category: null
+            category: null,
+            articleLimit: 10
         }
     }
 
@@ -30,24 +31,42 @@ export default class Articles extends Component {
                 this.setState({ loading: false })
             }
         }
+
+        window.addEventListener('scroll', () => {
+            this.setState({ articleLimit: this.state.articleLimit + 0.2 })
+            console.log(this.state.articleLimit);
+        })
     }
 
     render() {
         if (this.state.loading) {
-            return <h1>loading</h1>
+            return <div></div>
         } else {
             return (
-                <div className='articles'>
-                    {this.state.data.map((article, ind) => {
-                        return (
-                            <div key={ind} className='article'>
-                                <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image'/>
-                                <h1 className='article-title'>{article.tytul}</h1>
-                                <p className='article-content' dangerouslySetInnerHTML={{ __html: article.tresc}}></p>
-                            </div>
-                        );
-                    })}
-                </div>
+                <Fragment>
+                    <div className='article-filter'>
+
+                    </div>
+                    <div className='articles'>
+                        {this.state.data.map((article, ind) => {
+                            if (this.state.articleLimit >= ind) {
+                                return (
+                                    <a key={ind} className='tile' href={`article/${article.id}`}>
+                                        <div className='article'>
+                                            <div className='glow-container'>
+                                                <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' />
+                                            </div>
+                                            <div className='article-title'>
+                                                <h1>{article.tytul}
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </a>
+                                );
+                            }
+                        })}
+                    </div>
+                </Fragment>
             )
         }
     }
