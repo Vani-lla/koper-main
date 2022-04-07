@@ -18,3 +18,16 @@
 .badges a {
     margin-bottom: 30px;
 }
+
+.round-badge {
+    border-radius: 50%;
+    background-color: rgba(14, 0, 33, 0.6);
+
+    transition: .4s;
+}
+
+.round-badge:hover {
+    transform: scale(1.05);
+    background-color: rgba(14, 0, 33, 1);
+    box-shadow: 0 0 10px black;
+}
