@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/koper-main/static/css/main.aafea357.css",
-    "main.js": "/koper-main/static/js/main.9f3d0113.js",
+    "main.css": "/koper-main/static/css/main.6b651926.css",
+    "main.js": "/koper-main/static/js/main.c69883fb.js",
     "static/media/background.png": "/koper-main/static/media/background.ac3dc92d4b011cccf4ac.png",
     "static/media/logo_new.png": "/koper-main/static/media/logo_new.c145079058a3f09d8d6c.png",
     "static/media/rekrut.png": "/koper-main/static/media/rekrut.b904e7c5a2048ea81dd2.png",
     "static/media/sr22.png": "/koper-main/static/media/sr22.227a5b6d333ce33dcc63.png",
     "index.html": "/koper-main/index.html",
-    "main.aafea357.css.map": "/koper-main/static/css/main.aafea357.css.map",
-    "main.9f3d0113.js.map": "/koper-main/static/js/main.9f3d0113.js.map"
+    "main.6b651926.css.map": "/koper-main/static/css/main.6b651926.css.map",
+    "main.c69883fb.js.map": "/koper-main/static/js/main.c69883fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.aafea357.css",
-    "static/js/main.9f3d0113.js"
+    "static/css/main.6b651926.css",
+    "static/js/main.c69883fb.js"
   ]
 }
