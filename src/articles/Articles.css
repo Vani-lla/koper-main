@@ -1,6 +1,6 @@
 .articles {
     position: absolute;
-    top: 25vh; left: calc(10vw + 200px);
+    top: 40vh; left: calc(10vw + 200px);
     width: calc(80vw - 400px);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -11,13 +11,14 @@
     text-decoration: none;
     transition: .5s;
 
-    animation-name: article-appear;
-    animation-duration: 1s;
+    animation-name: article-appear, article-disappear;
+    animation-duration: 1s, 1s;
+    /* animation-fill-mode: forwards; */
 }
 
 .articles a:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 30px #5a1d07aa;
+    box-shadow: 0 0 80px black;
 }
 
 .article {
@@ -56,6 +57,52 @@
     width: 100%;
 }
 
+.article-filter {
+    position: absolute;
+    width: calc(80vw - 400px);
+    top: 25vh; left: calc(10vw + 200px);
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter-button {
+    text-decoration: none;
+    font-size: 30px; padding: 30px;
+    display: flex; align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.filter-button:hover {
+    color: #ff571a;
+    transform: scale(1.05);
+}
+
+.filter-active {
+    color: #ff571a;
+    font-weight: bolder;
+    transform: scale(1.05);
+}
+
+.loader {
+    position: absolute;
+    width: 100px; height: 100px;
+    left: calc(50vw - 50px);
+    top: 50vh;
+    background-color: rgba(14, 0, 33, 0.3);
+    padding: 5px;
+    border-radius: 50%;
+
+    animation-name: loader;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 @keyframes article-appear {
     from {
         transform: scale(.7);
@@ -66,5 +113,27 @@
         transition: scale(1);
         opacity: 1;
         box-shadow: 0 0 60px black;
+    }
+}
+
+@keyframes article-disappear {
+    from {
+        transform: scale(.7);
+        opacity: 0;
+        box-shadow: none;
+    }
+    to {
+        transition: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 60px black;
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

@@ -4,7 +4,6 @@ import './Articles.css'
 const url = 'https://koper.edu.pl/Api/artykul2.php';
 const http = new XMLHttpRequest();
 
-
 export default class Articles extends Component {
     constructor(props) {
         super(props);
@@ -12,7 +11,8 @@ export default class Articles extends Component {
             loading: true,
             data: [],
             category: null,
-            articleLimit: 10
+            articleLimit: 10,
+            articleFilter: 0
         }
     }
 
@@ -27,6 +27,7 @@ export default class Articles extends Component {
                     const element = JSON.parse(data)[i];
                     this.state.data.push(element);
                 }
+                console.log(this.state.data[0])
 
                 this.setState({ loading: false })
             }
@@ -34,35 +35,79 @@ export default class Articles extends Component {
 
         window.addEventListener('scroll', () => {
             this.setState({ articleLimit: this.state.articleLimit + 0.2 })
-            console.log(this.state.articleLimit);
+            console.log(this.state.articleFilter);
         })
     }
 
     render() {
         if (this.state.loading) {
-            return <div></div>
+            return (
+                <Fragment>
+                    <div className='article-filter'>
+                        {this.state.articleFilter === 0 ? <div onClick={() => { this.setState({ articleFilter: 0 }) }} className='filter-button tile filter-active'>Wszystkie</div> : <div onClick={() => { this.setState({ articleFilter: 0 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Wszystkie</div>}
+                        {this.state.articleFilter === 1 ? <div onClick={() => { this.setState({ articleFilter: 1 }) }} className='filter-button tile filter-active'>Sport</div> : <div onClick={() => { this.setState({ articleFilter: 1 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Sport</div>}
+                        {this.state.articleFilter === 2 ? <div onClick={() => { this.setState({ articleFilter: 2 }) }} className='filter-button tile filter-active'>Biblioteka</div> : <div onClick={() => { this.setState({ articleFilter: 2 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Biblioteka</div>}
+                    </div>
+                    <img src="https://i.pinimg.com/originals/13/1d/19/131d198170c4c42f03145d30602f06f9.png" className='loader' />
+                </Fragment>
+            )
         } else {
             return (
                 <Fragment>
                     <div className='article-filter'>
-
+                        {this.state.articleFilter === 0 ? <div className='filter-button tile filter-active'>Wszystkie</div> : <div onClick={() => { this.setState({ articleFilter: 0 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Wszystkie</div>}
+                        {this.state.articleFilter === 1 ? <div className='filter-button tile filter-active'>Sport</div> : <div onClick={() => { this.setState({ articleFilter: 1 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Sport</div>}
+                        {this.state.articleFilter === 2 ? <div className='filter-button tile filter-active'>Biblioteka</div> : <div onClick={() => { this.setState({ articleFilter: 2 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Biblioteka</div>}
                     </div>
                     <div className='articles'>
                         {this.state.data.map((article, ind) => {
                             if (this.state.articleLimit >= ind) {
-                                return (
-                                    <a key={ind} className='tile' href={`article/${article.id}`}>
-                                        <div className='article'>
-                                            <div className='glow-container'>
-                                                <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' />
+                                if (this.state.articleFilter === 1 && article.kategoria === "sport") {
+                                    return (
+                                        <a key={ind} className='tile' href={`article/${article.id}`}>
+                                            <div className='article'>
+                                                <div className='glow-container'>
+                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' />
+                                                </div>
+                                                <div className='article-title'>
+                                                    <h1>
+                                                        {article.tytul}
+                                                    </h1>
+                                                </div>
                                             </div>
-                                            <div className='article-title'>
-                                                <h1>{article.tytul}
-                                                </h1>
+                                        </a>
+                                    );
+                                } else if (this.state.articleFilter === 2 && article.kategoria === "biblio") {
+                                    return (
+                                        <a key={ind} className='tile' href={`article/${article.id}`}>
+                                            <div className='article'>
+                                                <div className='glow-container'>
+                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' />
+                                                </div>
+                                                <div className='article-title'>
+                                                    <h1>
+                                                        {article.tytul}
+                                                    </h1>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                );
+                                        </a>
+                                    );
+                                } else if (this.state.articleFilter === 0) {
+                                    return (
+                                        <a key={ind} className='tile' href={`article/${article.id}`}>
+                                            <div className='article'>
+                                                <div className='glow-container'>
+                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' />
+                                                </div>
+                                                <div className='article-title'>
+                                                    <h1>
+                                                        {article.tytul}
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    );
+                                }
                             }
                         })}
                     </div>
