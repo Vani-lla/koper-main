@@ -7,6 +7,7 @@ import Graphs from './graphs/Graphs';
 import Menubar from './menubar/Menubar';
 import Articles from './articles/Articles';
 import ArticleView from './article-view/ArticleView';
+import Recrutation from './recrutation/Recrutation';
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                         <Badges />
                         <Graphs />
                         <Menubar />
+                        <Recrutation />
                     </Fragment>
                 }>
                 </Route>

@@ -15,13 +15,13 @@
 .value-line {
     height: calc(100% - 2px);
     width: 2px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .base-line {
     height: 2px;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .slupek {
