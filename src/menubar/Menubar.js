@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import './Menubar.css'
-import girigiri from '../static/girigiri.mp3'
+import rickroll from '../static/rickroll.mp3'
 
 export default function Menubar() {
     return (
@@ -27,7 +27,7 @@ export default function Menubar() {
                     </a>
                 </div>
                 <div>
-                    <a title='<3' className='flash-text-nav' onClick={() => { new Audio(girigiri).play()}} style={{cursor: 'pointer'}}>
+                    <a title='<3' className='flash-text-nav' onClick={() => { new Audio(rickroll).play()}} style={{cursor: 'pointer'}}>
                         <i className='fa fa-heart' aria-hidden="true"></i>
                     </a>
                 </div>
