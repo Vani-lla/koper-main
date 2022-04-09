@@ -99,7 +99,7 @@ export default class Articles extends Component {
                                     );
                                 } else if (this.state.articleFilter === 0) {
                                     return (
-                                        <a key={ind} className='tile' href={`koper-main/article/${article.id}`}>
+                                        <a key={ind} className='tile' href={`article/${article.id}`}>
                                             <div className='article'>
                                                 <div className='glow-container' id={"glow"+article.id.toString()}>
                                                     <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' onError={() => {document.getElementById("glow"+article.id.toString()).style = "display: none;"}}/>

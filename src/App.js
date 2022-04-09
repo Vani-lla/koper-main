@@ -32,6 +32,24 @@ function App() {
                     </Fragment>
                 }>
                 </Route>
+                <Route path='/rekrutacja' element={
+                    <Fragment>
+                        <Nav />
+                        <Badges />
+                        <Graphs />
+                        <Menubar />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/erasmus' element={
+                    <Fragment>
+                        <Nav />
+                        <Badges />
+                        <Graphs />
+                        <Menubar />
+                    </Fragment>
+                }>
+                </Route>
             </Routes>
         </BrowserRouter>
 
