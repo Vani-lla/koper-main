@@ -16,7 +16,7 @@ export default class Graphs extends Component {
     };
 
     componentDidMount() {
-        this.setState({ data: [{ "subject": "Matematyka", "koper": 69, "polska": 42 }, { "subject": "Polski", "koper": 42, "polska": 69 }] });
+        this.setState({ data: [{ "subject": "Matematyka", "koper": 69, "polska": 42 }, { "subject": "Polski", "koper": 50, "polska": 25 }] });
         this.setState({ loading: false });
     }
 

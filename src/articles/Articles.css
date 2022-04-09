@@ -1,10 +1,11 @@
 .articles {
     position: absolute;
-    top: 40vh; left: calc(10vw + 200px);
+    top: 70vh; left: calc(10vw + 200px);
     width: calc(80vw - 400px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5vw;
+    z-index: -1;
 }
 
 .articles a {
@@ -60,11 +61,12 @@
 .article-filter {
     position: absolute;
     width: calc(80vw - 400px);
-    top: 25vh; left: calc(10vw + 200px);
+    top: 55vh; left: calc(10vw + 200px);
     height: 70px;
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    z-index: -1;
 }
 
 .filter-button {
@@ -92,7 +94,7 @@
     position: absolute;
     width: 100px; height: 100px;
     left: calc(50vw - 50px);
-    top: 50vh;
+    top: 70vh;
     background-color: rgba(14, 0, 33, 0.3);
     padding: 5px;
     border-radius: 50%;
@@ -101,6 +103,15 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.school-image {
+    position: absolute;
+    top: 25vh; left: calc(10vw + 200px);
+    width: calc(80vw - 400px);
+    height: 250px;
+    z-index: -1;
+
 }
 
 @keyframes article-appear {

@@ -9,6 +9,8 @@
     display: grid;
     grid-template-columns: 100px 100px;
     grid-template-rows: repeat(3, 100px);
+
+    z-index: -1;
 }
 
 
@@ -27,10 +29,35 @@
 
 i {
     color: inherit;
+    font-size: 55px;
 }
 
 .menu-links div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.credits {
+    position: absolute;
+    width: 200px;
+    padding: 20px;
+    right: 5vw;
+    top: 115vh;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.credits b {
+    font-size: 25px;
+}
+
+.larla {
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 400;
+    font-size: 30px !important;
 }

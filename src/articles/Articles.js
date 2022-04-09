@@ -43,6 +43,9 @@ export default class Articles extends Component {
         if (this.state.loading) {
             return (
                 <Fragment>
+                    <div className='school-image tile'>
+
+                    </div>
                     <div className='article-filter'>
                         {this.state.articleFilter === 0 ? <div onClick={() => { this.setState({ articleFilter: 0 }) }} className='filter-button tile filter-active'>Wszystkie</div> : <div onClick={() => { this.setState({ articleFilter: 0 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Wszystkie</div>}
                         {this.state.articleFilter === 1 ? <div onClick={() => { this.setState({ articleFilter: 1 }) }} className='filter-button tile filter-active'>Sport</div> : <div onClick={() => { this.setState({ articleFilter: 1 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Sport</div>}
@@ -54,6 +57,9 @@ export default class Articles extends Component {
         } else {
             return (
                 <Fragment>
+                    <div className='school-image tile'>
+                        <img src='#' alt='zdjęcie kopera czy coś'></img>
+                    </div>
                     <div className='article-filter'>
                         {this.state.articleFilter === 0 ? <div className='filter-button tile filter-active'>Wszystkie</div> : <div onClick={() => { this.setState({ articleFilter: 0 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Wszystkie</div>}
                         {this.state.articleFilter === 1 ? <div className='filter-button tile filter-active'>Sport</div> : <div onClick={() => { this.setState({ articleFilter: 1 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Sport</div>}
