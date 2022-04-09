@@ -35,7 +35,6 @@ export default class Articles extends Component {
 
         window.addEventListener('scroll', () => {
             this.setState({ articleLimit: this.state.articleLimit + 0.2 })
-            console.log(this.state.articleFilter);
         })
     }
 
@@ -61,9 +60,9 @@ export default class Articles extends Component {
                         <img src='#' alt='zdjęcie kopera czy coś'></img>
                     </div>
                     <div className='article-filter'>
-                        {this.state.articleFilter === 0 ? <div className='filter-button tile filter-active'>Wszystkie</div> : <div onClick={() => { this.setState({ articleFilter: 0 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Wszystkie</div>}
-                        {this.state.articleFilter === 1 ? <div className='filter-button tile filter-active'>Sport</div> : <div onClick={() => { this.setState({ articleFilter: 1 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Sport</div>}
-                        {this.state.articleFilter === 2 ? <div className='filter-button tile filter-active'>Biblioteka</div> : <div onClick={() => { this.setState({ articleFilter: 2 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Biblioteka</div>}
+                        {this.state.articleFilter === 0 ? <div className='filter-button filter-active tile'>Wszystkie</div> : <div onClick={() => { this.setState({ articleFilter: 0 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Wszystkie</div>}
+                        {this.state.articleFilter === 1 ? <div className='filter-button filter-active tile'>Sport</div> : <div onClick={() => { this.setState({ articleFilter: 1 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Sport</div>}
+                        {this.state.articleFilter === 2 ? <div className='filter-button filter-active tile'>Biblioteka</div> : <div onClick={() => { this.setState({ articleFilter: 2 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Biblioteka</div>}
                     </div>
                     <div className='articles'>
                         {this.state.data.map((article, ind) => {
@@ -100,10 +99,10 @@ export default class Articles extends Component {
                                     );
                                 } else if (this.state.articleFilter === 0) {
                                     return (
-                                        <a key={ind} className='tile' href={`article/${article.id}`}>
+                                        <a key={ind} className='tile' href={`koper-main/article/${article.id}`}>
                                             <div className='article'>
-                                                <div className='glow-container'>
-                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' />
+                                                <div className='glow-container' id={"glow"+article.id.toString()}>
+                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' onError={() => {document.getElementById("glow"+article.id.toString()).style = "display: none;"}}/>
                                                 </div>
                                                 <div className='article-title'>
                                                     <h1>

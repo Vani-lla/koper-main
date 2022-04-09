@@ -1,7 +1,7 @@
 .articles {
     position: absolute;
     top: 70vh; left: calc(10vw + 200px);
-    width: calc(80vw - 400px);
+    width: calc(80vw - 420px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5vw;
@@ -60,8 +60,8 @@
 
 .article-filter {
     position: absolute;
-    width: calc(80vw - 400px);
-    top: 55vh; left: calc(10vw + 200px);
+    width: calc(60vw - 420px);
+    top: 55vh; left: calc(20vw + 200px);
     height: 70px;
     padding: 20px;
     display: flex;
@@ -108,7 +108,7 @@
 .school-image {
     position: absolute;
     top: 25vh; left: calc(10vw + 200px);
-    width: calc(80vw - 400px);
+    width: calc(80vw - 420px);
     height: 250px;
     z-index: -1;
 

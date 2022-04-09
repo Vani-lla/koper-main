@@ -13,13 +13,13 @@ export default function Badges() {
             <a href='https://licea.perspektywy.pl/2022/rankings'>
                 <img src={silver} alt='silver badge' />
             </a>
-            <a className='round-badge' href='/rekrutacja'>
+            <a className='round-badge' href='koper-main/rekrutacja'>
                 <img src={rekrut} />
             </a>
-            <a className='round-badge' href=''>
+            <a className='round-badge' href='https://uonetplus.vulcan.net.pl/powiatcieszynski'>
                 <img src={dziennik} />
             </a>
-            <a className='round-badge' href=''>
+            <a className='round-badge' href='koper-main/erasmus'>
                 <img src={erasmus} />
             </a>
         </div>

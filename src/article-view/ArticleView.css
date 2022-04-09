@@ -1,0 +1,37 @@
+.single-article-view {
+    position: absolute;
+    top: 25vh; left: calc(10vw + 200px);
+    width: calc(80vw - 420px);
+    padding: 30px;
+    z-index: -1;
+}
+
+.single-article-view > h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.single-article-view > p {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.article-images {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.article-images div {
+    min-width: 100%;
+    justify-content: center;
+    display: flex;
+    /* transform: translateX(10%); */
+}
+
+.article-images img {
+    max-width: 100%;
+    margin: auto;
+    /* max-height: 80vh; */
+}
