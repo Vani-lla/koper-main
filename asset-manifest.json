@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/koper-main/static/css/main.6b651926.css",
-    "main.js": "/koper-main/static/js/main.c69883fb.js",
+    "main.css": "/koper-main/static/css/main.c364ba05.css",
+    "main.js": "/koper-main/static/js/main.11e7ced7.js",
+    "static/media/rickroll.mp3": "/koper-main/static/media/rickroll.ad17da89fc798ae599de.mp3",
     "static/media/background.png": "/koper-main/static/media/background.ac3dc92d4b011cccf4ac.png",
+    "static/media/logo_dziennik.png": "/koper-main/static/media/logo_dziennik.251b12e75bf3bec181e0.png",
     "static/media/logo_new.png": "/koper-main/static/media/logo_new.c145079058a3f09d8d6c.png",
-    "static/media/rekrut.png": "/koper-main/static/media/rekrut.b904e7c5a2048ea81dd2.png",
+    "static/media/rekrut.png": "/koper-main/static/media/rekrut.2f079891b4e5645aa3d4.png",
     "static/media/sr22.png": "/koper-main/static/media/sr22.227a5b6d333ce33dcc63.png",
+    "static/media/logo_erasmus.png": "/koper-main/static/media/logo_erasmus.b4f92fd59b6cd5a405cb.png",
     "index.html": "/koper-main/index.html",
-    "main.6b651926.css.map": "/koper-main/static/css/main.6b651926.css.map",
-    "main.c69883fb.js.map": "/koper-main/static/js/main.c69883fb.js.map"
+    "main.c364ba05.css.map": "/koper-main/static/css/main.c364ba05.css.map",
+    "main.11e7ced7.js.map": "/koper-main/static/js/main.11e7ced7.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b651926.css",
-    "static/js/main.c69883fb.js"
+    "static/css/main.c364ba05.css",
+    "static/js/main.11e7ced7.js"
   ]
 }
