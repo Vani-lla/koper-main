@@ -12,8 +12,8 @@ export default function Recrutation() {
                         <th>Przedmioty punktowane</th>
                     </tr>
                 </thead>
+                
                 <tbody>
-
                     <tr>
                         <td>Dyplomatyczne</td>
                         <td>

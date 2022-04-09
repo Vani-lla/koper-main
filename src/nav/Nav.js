@@ -11,7 +11,7 @@ export default function Nav() {
                 <div className='nav-topic' id='first-nav'>
                     <div className='drop-topic'>O szkole</div>
                     <div className='dropdown'>
-                        <a href='#'>Historia</a>
+                        <a href='/historia'>Historia</a>
                         <a href='#'>Dyrekcja Szkoły</a>
                         <a href='#'>Grono Pedagogiczne</a>
                         <a href='#'>Pedagog Szkolny</a>

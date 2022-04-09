@@ -8,6 +8,7 @@ import Menubar from './menubar/Menubar';
 import Articles from './articles/Articles';
 import ArticleView from './article-view/ArticleView';
 import Recrutation from './recrutation/Recrutation';
+import History from './history/History';
 
 function App() {
     return (
@@ -49,6 +50,16 @@ function App() {
                         <Badges />
                         <Graphs />
                         <Menubar />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/historia' element={
+                    <Fragment>
+                        <Nav />
+                        <Badges />
+                        <Graphs />
+                        <Menubar />
+                        <History />
                     </Fragment>
                 }>
                 </Route>
