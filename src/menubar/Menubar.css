@@ -2,7 +2,7 @@
     /* position: absolute; */
     /* right: 5vw; */
     /* top: 70vh; */
-    width: 15vw;
+    width: 100%;
     padding: 1vw;
 
     display: grid;
@@ -39,7 +39,7 @@ i {
 
 .credits {
     /* position: absolute; */
-    width: 15vw;
+    width: 100%;
     padding: 1vw;
     /* right: 5vw; */
     /* top: 115vh; */
