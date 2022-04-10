@@ -1,11 +1,12 @@
 #graphs {
-    position: absolute;
-    right: 5vw; top: 25vh;
-    padding: 20px;
+    /* position: absolute; */
+    /* right: 5vw; top: 25vh; */
+    padding: 1vw;
     display: flex;
-    width: 200px; height: 300px;
-    box-sizing: content-box;
+    width: 15vw; height: 330px; max-width: 240px;
     z-index: -1;
+
+    font-size: 1rem;
 }
 
 .graph {
@@ -25,24 +26,24 @@
 }
 
 .slupek {
-    width: 40px;
+    width: 20%;
     position: absolute;
     transition: 1s;
 }
 
 .koper-value {
     background-color: #ff571a;
-    transform: translate(40px, calc(-2px - 100%));
+    transform: translate(70%, calc(-2px - 100%));
 }
 
 .poland-value {
     background-color: #68637B;
-    transform: translate(120px, calc(-2px - 100%));
+    transform: translate(270%, calc(-2px - 100%));
 }
 
 .slupek-description {
     position: absolute;
-    width: 40px;
+    width: 20%;
     text-align: center;
     font-weight: 900;
     transition: 1s;
@@ -52,8 +53,8 @@
     text-align: center;
     transition: 1s;
     position: absolute;
-    bottom: 75px;
-    width: 200px;
+    top: 225px;
+    width: calc(100% - 2vw);
 }
 
 .active {
@@ -67,10 +68,9 @@
 
 .graph-legend {
     text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 200px;
-    font-size: 20px;
+    margin-top: 50px;
+    width: 100%;
+    font-size: 1.3em;
 }
 
 .koper-highlight {
@@ -78,4 +78,28 @@
 }
 .poland-highlight {
     color: #68637B;
+}
+
+@media only screen and (max-width: 1500px) {
+    .graph-subject {
+        font-size: 1.6em;
+    }
+
+    .graph-legend {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .graph-subject {
+        font-size: 1.3em;
+    }
+
+    .graph-legend {
+        font-size: .9em;
+    }
+    .slupek-description {
+        font-size: .9em;
+    }
+
 }

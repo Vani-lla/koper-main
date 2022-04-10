@@ -3,8 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Badges from './badges/Badges';
 import Nav from './nav/Nav';
-import Graphs from './graphs/Graphs';
-import Menubar from './menubar/Menubar';
+import RightDesktop from './rightDesktop/rightDesktop';
 import Articles from './articles/Articles';
 import ArticleView from './article-view/ArticleView';
 import Recrutation from './recrutation/Recrutation';
@@ -16,11 +15,10 @@ function App() {
             <Routes>
                 <Route path='' element={
                     <Fragment>
-                        <Nav />
                         <Badges />
-                        <Graphs />
-                        <Menubar />
+                        <RightDesktop />
                         <Articles />
+                        <Nav />
                     </Fragment>
                 }>
                 </Route>
@@ -28,8 +26,7 @@ function App() {
                     <Fragment>
                         <Nav />
                         <Badges />
-                        <Graphs />
-                        <Menubar />
+                        <RightDesktop />
                         <ArticleView />
                     </Fragment>
                 }>
@@ -38,8 +35,7 @@ function App() {
                     <Fragment>
                         <Nav />
                         <Badges />
-                        <Graphs />
-                        <Menubar />
+                        <RightDesktop />
                         <Recrutation />
                     </Fragment>
                 }>
@@ -48,8 +44,7 @@ function App() {
                     <Fragment>
                         <Nav />
                         <Badges />
-                        <Graphs />
-                        <Menubar />
+                        <RightDesktop />
                     </Fragment>
                 }>
                 </Route>
@@ -57,8 +52,7 @@ function App() {
                     <Fragment>
                         <Nav />
                         <Badges />
-                        <Graphs />
-                        <Menubar />
+                        <RightDesktop />
                         <History />
                     </Fragment>
                 }>

@@ -2,12 +2,14 @@ nav {
     position: absolute;
     margin: 1vw;
     width: 98vw;
+
+    font-size: 2rem;
 }
 
 .main-name {
     text-align: center;
     margin-top: 1vh;
-    font-size: 50px;
+    font-size: 1.6em;
 }
 
 .navigation {
@@ -27,19 +29,20 @@ nav {
 }
 
 .drop-topic {
-    font-size: 35px;
+    font-size: 1.1em;
     font-weight: 800;
     text-align: center;
 
     cursor: default;
     transition: .5s;
+    user-select: none;
 }
 
 .dropdown {
     position: absolute; z-index: 1;
-    width: 18rem;
+    width: 10em;
     display: flex; flex-direction: column;
-    /* padding: 10px; */
+    padding-top: 10px;
 
     opacity: 0;
     transform: scaleY(.95) translateY(-5%);
@@ -49,8 +52,8 @@ nav {
 
 .dropdown a {
     text-decoration: none;
-    font-size: 25px;
-    padding: 10px 20px;
+    font-size: .76em;
+    padding: .4em 1em;
 }
 
 .dropdown a:hover {
@@ -67,4 +70,23 @@ nav {
 
 .nav-topic:hover > .drop-topic {
     color: #ff571a;
+}
+
+@media only screen and (max-width: 1550px) {
+    nav {
+        font-size: 1.8rem;
+    }
+    .navigation {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    nav {
+        font-size: 1.4rem;
+        width: 100vw;
+    }
+    .navigation {
+        grid-template-columns: .1fr repeat(4, 1fr) .1fr;
+    }   
 }

@@ -11,7 +11,7 @@ export default class Articles extends Component {
             loading: true,
             data: [],
             category: null,
-            articleLimit: 10,
+            articleLimit: 20,
             articleFilter: 0
         }
     }
@@ -32,10 +32,6 @@ export default class Articles extends Component {
                 this.setState({ loading: false })
             }
         }
-
-        window.addEventListener('scroll', () => {
-            this.setState({ articleLimit: this.state.articleLimit + 0.2 })
-        })
     }
 
     render() {

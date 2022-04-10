@@ -1,18 +1,19 @@
 .badges {
     position: absolute;
     left: 5vw; top: 25vh;
-    padding: 20px;
+    padding: 1vw;
     display: flex; flex-direction: column;
     align-items: center;
     z-index: -1;
 }
 
 #main-logo {
-    min-width: 200px;
+    width: 13vw; max-width: 200px;
     margin-bottom: 40px;
 }
 
 .badges img {
+    width: 10vw;
     max-width: 150px;
 }
 

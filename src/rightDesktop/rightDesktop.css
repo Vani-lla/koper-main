@@ -1,0 +1,9 @@
+.right-desktop {
+    position: absolute;
+    right: 5vw; top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1000px;
+}
