@@ -1,21 +1,23 @@
 .single-article-view {
     position: absolute;
-    top: 25vh; left: calc(10vw + 200px);
-    width: calc(80vw - 420px);
+    top: 25vh; left: 25vw;
+    width: 50vw;
     padding: 30px;
     z-index: -1;
+
+    font-size: 1rem;
 }
 
 .single-article-view > h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 3em;
     margin-bottom: 25px;
 }
 
 .single-article-view > p {
-    margin-top: 25px;
+    margin-top: 1.5em;
     text-align: center;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .article-images {
@@ -34,4 +36,14 @@
     max-width: 100%;
     margin: auto;
     /* max-height: 80vh; */
+}
+
+@media only screen and (max-width: 1210px) {
+    .single-article-view > h1 {
+        font-size: 2.2em;
+    }
+    .single-article-view > p {
+        font-size: 1.5em;
+    }
+
 }

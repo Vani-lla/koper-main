@@ -4,6 +4,7 @@ nav {
     width: 98vw;
 
     font-size: 2rem;
+    /* overflow: hidden; */
 }
 
 .main-name {
@@ -45,7 +46,7 @@ nav {
     padding-top: 10px;
 
     opacity: 0;
-    transform: scaleY(.95) translateY(-5%);
+    transform: scaleY(.95) translateY(-5%) translateX(-15%);
     pointer-events: none;
     transition: .3s;
 }
@@ -65,7 +66,7 @@ nav {
     opacity: 1;
     background-color: rgba(14, 0, 33, 1);
     box-shadow: 0 5px 25px black;
-    transform: none;
+    transform: translateX(-15%);
 }
 
 .nav-topic:hover > .drop-topic {
@@ -84,9 +85,13 @@ nav {
 @media only screen and (max-width: 1210px) {
     nav {
         font-size: 1.4rem;
-        width: 100vw;
+        /* width: 100vw; */
+        margin: 0;
+        left: 0;
     }
+
     .navigation {
         grid-template-columns: .1fr repeat(4, 1fr) .1fr;
-    }   
+        /* padding: 0; */
+    }
 }
