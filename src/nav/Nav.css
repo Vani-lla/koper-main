@@ -46,7 +46,7 @@ nav {
     padding-top: 10px;
 
     opacity: 0;
-    transform: scaleY(.95) translateY(-5%) translateX(-15%);
+    transform: scaleY(.95) translateY(-5%) translateX(0%);
     pointer-events: none;
     transition: .3s;
 }
@@ -66,7 +66,7 @@ nav {
     opacity: 1;
     background-color: rgba(14, 0, 33, 1);
     box-shadow: 0 5px 25px black;
-    transform: translateX(-15%);
+    transform: translateX(0%);
 }
 
 .nav-topic:hover > .drop-topic {
