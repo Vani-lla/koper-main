@@ -1,6 +1,6 @@
 .articles {
     position: absolute;
-    top: 70vh; left: 25vw;
+    top: 550px; left: 25vw;
     width: 50vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,7 +98,8 @@
     top: 70vh;
     background-color: rgba(14, 0, 33, 0.3);
     padding: 5px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    background-color: red;
 
     animation-name: loader;
     animation-duration: 5s;
@@ -108,7 +109,7 @@
 
 .school-image {
     position: absolute;
-    top: 25vh; left: 25vw;
+    top: 250px; left: 25vw;
     width: 50vw;
     height: 250px;
     z-index: -1;

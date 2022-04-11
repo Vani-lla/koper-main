@@ -27,12 +27,14 @@ nav {
 
 .nav-topic {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .drop-topic {
+    display: inline;
     font-size: 1.1em;
     font-weight: 800;
-    text-align: center;
 
     cursor: default;
     transition: .5s;
@@ -46,7 +48,7 @@ nav {
     padding-top: 10px;
 
     opacity: 0;
-    transform: scaleY(.95) translateY(-5%) translateX(0%);
+    transform: scaleY(.95) translateY(-5%);
     pointer-events: none;
     transition: .3s;
 }
@@ -61,15 +63,15 @@ nav {
     background-color: rgba(100, 100, 100, .2);
 }
 
-.nav-topic:hover > .dropdown {
+.nav-topic:hover .dropdown {
     pointer-events: auto;
     opacity: 1;
     background-color: rgba(14, 0, 33, 1);
     box-shadow: 0 5px 25px black;
-    transform: translateX(0%);
+    transform: none;
 }
 
-.nav-topic:hover > .drop-topic {
+.nav-topic:hover .drop-topic {
     color: #ff571a;
 }
 

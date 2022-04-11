@@ -1,12 +1,12 @@
 .right-desktop {
     position: absolute;
-    right: calc(5vw - 15px); top: 25vh;
+    right: calc(5vw - 15px); top: 250px;
     max-width: 240px;
     width: 15vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 1000px;
+    height: 900px;
     z-index: 0;
 }

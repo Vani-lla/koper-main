@@ -46,7 +46,8 @@ export default class Articles extends Component {
                         {this.state.articleFilter === 1 ? <div onClick={() => { this.setState({ articleFilter: 1 }) }} className='filter-button tile filter-active'>Sport</div> : <div onClick={() => { this.setState({ articleFilter: 1 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Sport</div>}
                         {this.state.articleFilter === 2 ? <div onClick={() => { this.setState({ articleFilter: 2 }) }} className='filter-button tile filter-active'>Biblioteka</div> : <div onClick={() => { this.setState({ articleFilter: 2 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Biblioteka</div>}
                     </div>
-                    <img src="https://i.pinimg.com/originals/13/1d/19/131d198170c4c42f03145d30602f06f9.png" className='loader' />
+                    {/* <img src="https://i.pinimg.com/originals/13/1d/19/131d198170c4c42f03145d30602f06f9.png" className='loader' /> */}
+                    <div className='loader' />
                 </Fragment>
             )
         } else {

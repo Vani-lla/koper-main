@@ -1,17 +1,13 @@
 .menu-links {
-    /* position: absolute; */
-    /* right: 5vw; */
-    /* top: 70vh; */
     width: 100%;
     padding: 1vw;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 10vh);
+    grid-template-rows: repeat(3, 1fr);
 
     z-index: 1;
 }
-
 
 .flash-text-nav {
     font-size: 1em;
@@ -38,11 +34,8 @@ i {
 }
 
 .credits {
-    /* position: absolute; */
     width: 100%;
     padding: 1vw;
-    /* right: 5vw; */
-    /* top: 115vh; */
     display: flex;
     flex-direction: column;
 
