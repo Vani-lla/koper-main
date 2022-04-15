@@ -176,4 +176,8 @@
     .article {
         min-height: 200px;
     }
+
+    .see-more {
+        grid-column: span 1;
+    }
 }
