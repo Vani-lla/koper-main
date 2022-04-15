@@ -1,23 +1,24 @@
 .articles {
     position: absolute;
-    top: 550px; left: 25vw;
-    width: 50vw;
+    top: 550px; left: 22.5vw;
+    width: 55vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5vw;
-    z-index: 5;
+    grid-gap: 2vw;
+
+    padding-bottom: 2vw;
 }
 
 .articles a {
     text-decoration: none;
-    transition: .5s;
+    transition: .25s;
 
     animation-name: article-appear, article-disappear;
     animation-duration: 1s, 1s;
 }
 
 .articles a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 0 80px black;
 }
 
@@ -54,6 +55,18 @@
 }
 
 .article-title h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.see-more {
+    grid-column: span 2;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.see-more > h1 {
     text-align: center;
     width: 100%;
 }
@@ -111,10 +124,14 @@
     position: absolute;
     top: 250px; left: 25vw;
     width: 50vw;
-    height: 250px;
+    height: fit-content;
     z-index: -1;
-
 }
+
+.school-image img {
+    width: 100%;
+}
+
 
 @keyframes article-appear {
     from {

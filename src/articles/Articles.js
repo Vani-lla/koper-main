@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import './Articles.css'
+import schoolImage from '../static/banner.png'
 
 const url = 'https://koper.edu.pl/Api/artykul2.php';
 const http = new XMLHttpRequest();
@@ -11,7 +12,7 @@ export default class Articles extends Component {
             loading: true,
             data: [],
             category: null,
-            articleLimit: 20,
+            articleLimit: 19,
             articleFilter: 0
         }
     }
@@ -54,7 +55,7 @@ export default class Articles extends Component {
             return (
                 <Fragment>
                     <div className='school-image tile'>
-                        <img src='#' alt='zdjęcie kopera czy coś'></img>
+                        <img src={schoolImage} alt='zdjęcie kopera czy coś'></img>
                     </div>
                     <div className='article-filter'>
                         {this.state.articleFilter === 0 ? <div className='filter-button filter-active tile'>Wszystkie</div> : <div onClick={() => { this.setState({ articleFilter: 0 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Wszystkie</div>}
@@ -98,8 +99,8 @@ export default class Articles extends Component {
                                     return (
                                         <a key={ind} className='tile' href={`article/${article.id}`}>
                                             <div className='article'>
-                                                <div className='glow-container' id={"glow"+article.id.toString()}>
-                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' onError={() => {document.getElementById("glow"+article.id.toString()).style = "display: none;"}}/>
+                                                <div className='glow-container' id={"glow" + article.id.toString()}>
+                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article image' onError={() => { document.getElementById("glow" + article.id.toString()).style = "display: none;" }} />
                                                 </div>
                                                 <div className='article-title'>
                                                     <h1>
@@ -112,6 +113,12 @@ export default class Articles extends Component {
                                 }
                             }
                         })}
+
+                        <a href='/articles' className='see-more tile'>
+                            {/* <div> */}
+                                <h1>Zobacz wszystkie artykuły</h1>
+                            {/* </div> */}
+                        </a>
                     </div>
                 </Fragment>
             )

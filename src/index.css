@@ -8,14 +8,15 @@
 
 body {
     background-image: url('./static/background.png');
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .main-header {
     position: absolute;
     width: 100vw;
     text-align: center;
-    /* font-family: 'Gugi', cursive; */
     font-size: 20px;
     margin-top: 15px;
 }

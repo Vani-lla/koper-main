@@ -1,14 +1,13 @@
 .badges {
     position: absolute;
     left: 5vw; top: 250px;
-    padding: 1vw; width: 15vw; min-width: 170px;
+    padding: 1vw; width: 15vw; min-width: 170px; max-width: 240px;
     display: flex; flex-direction: column;
     align-items: center;
-    z-index: -1;
 }
 
 #main-logo {
-    width: 15vw; max-width: 200px; min-width: 150px;
+    width: 12vw; max-width: 200px; min-width: 150px;
     margin-bottom: 40px;
 }
 
@@ -25,7 +24,7 @@
     border-radius: 50%;
     background-color: rgba(14, 0, 33, 0.6);
 
-    transition: .4s;
+    transition: .2s;
 }
 
 .round-badge:hover {

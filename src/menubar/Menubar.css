@@ -5,21 +5,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-
-    z-index: 1;
 }
 
 .flash-text-nav {
     font-size: 1em;
     color: whitesmoke;
     font-size: 60px;
-    transition: .5s;
+    transition: .2s;
 }
 
 .flash-text-nav:hover {
-    color: #ff571a;
-    text-shadow: 0 0 5px #ff571a;
-    transform: scale(1.1);
+    color: var(--highlight-color);
+    text-shadow: 0 0 5px var(--highlight-color);
+    transform: scale(1.05);
 }
 
 i {

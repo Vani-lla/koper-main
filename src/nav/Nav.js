@@ -15,7 +15,7 @@ export default function Nav() {
                         </div>
                         <div className='dropdown'>
                             <a href='/historia'>Historia</a>
-                            <a href='#'>Dyrekcja Szkoły</a>
+                            <a href='/dyrekcja'>Dyrekcja Szkoły</a>
                             <a href='#'>Grono Pedagogiczne</a>
                             <a href='#'>Pedagog Szkolny</a>
                             <a href='#'>Rada Rodziców</a>

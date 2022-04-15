@@ -27,7 +27,7 @@ export default function Menubar() {
                     </a>
                 </div>
                 <div>
-                    <a title='<3' className='flash-text-nav' onClick={() => { new Audio(rickroll).play()}} style={{cursor: 'pointer'}}>
+                    <a title='Ta ikona jeszcze nic nie robi, do zrobienia. Coś tu będzie' className='flash-text-nav' /* onClick={() => { new Audio(rickroll).play()}} */ style={{cursor: 'pointer'}}>
                         <i className='fa fa-heart' aria-hidden="true"></i>
                     </a>
                 </div>
@@ -39,7 +39,7 @@ export default function Menubar() {
             </div>
             <div className='credits tile'>
                 <div className='creator'>
-                    <div>Projekt i wykonanie:</div> <b>Igor Kowalczyk</b>
+                    <div>Projekt i wykonanie:</div> <b>Igoł Kowalczyk</b>
                     <div>Grafika:</div> <b className='larla'>Larła Sędek</b>
                 </div>
             </div>

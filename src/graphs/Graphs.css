@@ -4,7 +4,6 @@
     padding: 1vw;
     display: flex;
     width: 15vw; height: 330px; max-width: 240px;
-    z-index: -1;
 
     font-size: 1rem;
 }
@@ -32,7 +31,7 @@
 }
 
 .koper-value {
-    background-color: #ff571a;
+    background-color: var(--highlight-color);
     transform: translate(70%, calc(-2px - 100%));
 }
 
@@ -74,7 +73,7 @@
 }
 
 .koper-highlight {
-    color: #ff571a;
+    color: var(--highlight-color);
 }
 .poland-highlight {
     color: #68637B;
