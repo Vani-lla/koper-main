@@ -1,10 +1,11 @@
 .articles {
     position: absolute;
-    top: 550px; left: 22.5vw;
+    /* --top-height: 250px; */
+    top: calc(var(--top-height) + 15vw); left: 22.5vw;
     width: 55vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw;
+    gap: 2vw;
 
     padding-bottom: 2vw;
 }
@@ -122,7 +123,7 @@
 
 .school-image {
     position: absolute;
-    top: 250px; left: 25vw;
+    top: var(--top-height); left: 25vw;
     width: 50vw;
     height: fit-content;
     z-index: -1;
@@ -169,6 +170,13 @@
 }
 
 @media only screen and (max-width: 1210px) {
+    * {
+        --top-height: 200px;
+    }
+
+    html {
+        font-size: 14px;
+    }
     .articles {
         grid-template-columns: 1fr;
     }
@@ -179,5 +187,25 @@
 
     .see-more {
         grid-column: span 1;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 10px;
+    }
+
+    * {
+        --top-height: 100px;
+    }
+
+    .articles {
+        left: calc(4vw + 100px);
+        width: calc(92vw - 100px);
+        row-gap: 4vw;
+    }
+
+    .articles a:hover {
+        transform: scale(1.02);
     }
 }

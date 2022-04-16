@@ -83,7 +83,7 @@ export default function History() {
                 </div>
                 <div className='article-title'>
                     <h1>
-                        Poczętki LO im. M. Kopernika
+                        Początki LO im. M. Kopernika
                     </h1>
                 </div>
                 <p>

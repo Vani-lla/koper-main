@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
     /* outline: solid 1px yellow; */
+    --top-height: 250px;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .main-header {

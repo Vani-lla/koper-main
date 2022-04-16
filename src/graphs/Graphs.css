@@ -52,7 +52,7 @@
     text-align: center;
     transition: 1s;
     position: absolute;
-    top: 225px;
+    top: 235px;
     width: calc(100% - 2vw);
 }
 
@@ -67,7 +67,7 @@
 
 .graph-legend {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
     width: 100%;
     font-size: 1.3em;
 }
@@ -77,28 +77,4 @@
 }
 .poland-highlight {
     color: #68637B;
-}
-
-@media only screen and (max-width: 1500px) {
-    .graph-subject {
-        font-size: 1.6em;
-    }
-
-    .graph-legend {
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (max-width: 1210px) {
-    .graph-subject {
-        font-size: 1.3em;
-    }
-
-    .graph-legend {
-        font-size: .9em;
-    }
-    .slupek-description {
-        font-size: .9em;
-    }
-
 }

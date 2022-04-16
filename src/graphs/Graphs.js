@@ -33,7 +33,7 @@ export default class Graphs extends Component {
 
 
                 <div className='graph-legend'>
-                    Wyniki średnie w <b className='koper-highlight'>Koperze</b> oraz <b className='poland-highlight'>Polsce</b>
+                    <b className='koper-highlight'>Koper</b> oraz <b className='poland-highlight'>Polska</b>
                 </div>
             </div>
         )
@@ -46,9 +46,9 @@ export default class Graphs extends Component {
                     {this.graph(this.state.data[this.state.g])}
                     {this.state.data.map((graph_data, index) => {
                         if (this.state.g === index) {
-                            return <h1 key={index} className='graph-subject active'>{graph_data.subject}</h1>
+                            return <h2 key={index} className='graph-subject active'>{graph_data.subject}</h2>
                         } else {
-                            return <h1 key={index} className='graph-subject inactive'>{graph_data.subject}</h1>
+                            return <h2 key={index} className='graph-subject inactive'>{graph_data.subject}</h2>
                         }
                     })}
                 </div>

@@ -55,7 +55,7 @@ export default function Nav() {
                 <div className='nav-topic'>
                     <div className='drop-topic-container'>
                         <div className='drop-topic'>Plany Lekcji</div>
-                        <div className='dropdown'>
+                        <div className='dropdown' id='last-drop'>
                             <a href='#'>Plan lekcji</a>
                             <a href='#'>Zastępstwa</a>
                         </div>

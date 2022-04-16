@@ -33,7 +33,7 @@ nav {
 
 .drop-topic {
     display: inline;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 800;
 
     cursor: default;
@@ -51,6 +51,7 @@ nav {
     transform: scaleY(.95) translateY(-5%);
     pointer-events: none;
     transition: .3s;
+    will-change: opacity, transform;
 }
 
 .dropdown a {
@@ -76,9 +77,6 @@ nav {
 }
 
 @media only screen and (max-width: 1550px) {
-    nav {
-        font-size: 1.8rem;
-    }
     .navigation {
         grid-template-columns: repeat(6, 1fr);
     }
@@ -86,14 +84,27 @@ nav {
 
 @media only screen and (max-width: 1210px) {
     nav {
-        font-size: 1.4rem;
-        /* width: 100vw; */
+        width: 100%;
         margin: 0;
         left: 0;
+    }
+
+    #last-drop {
+        width: 6.5em;
+    }
+
+    .main-name {
+        font-size: 1.3em;
     }
 
     .navigation {
         grid-template-columns: .1fr repeat(4, 1fr) .1fr;
         /* padding: 0; */
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navigation {
+        display: none;
     }
 }

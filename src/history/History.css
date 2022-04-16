@@ -1,6 +1,6 @@
 .history-tiles {
     position: absolute;
-    top: 250px;
+    top: var(--top-height);
     width: 50vw;
     left: 25vw;
     display: grid;

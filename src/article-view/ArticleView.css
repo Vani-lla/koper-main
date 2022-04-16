@@ -1,6 +1,6 @@
 .single-article-view {
     position: absolute;
-    top: 25vh; left: 25vw;
+    top: var(--top-height); left: 25vw;
     width: 50vw;
     padding: 30px;
     z-index: -1;

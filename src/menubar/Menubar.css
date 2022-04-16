@@ -8,9 +8,8 @@
 }
 
 .flash-text-nav {
-    font-size: 1em;
+    font-size: 3.5em;
     color: whitesmoke;
-    font-size: 60px;
     transition: .2s;
 }
 
@@ -22,7 +21,7 @@
 
 i {
     color: inherit;
-    font-size: 55px;
+    font-size: 1em;
 }
 
 .menu-links div {
@@ -53,7 +52,7 @@ i {
 
 @media only screen and (max-width: 1210px) {
     i {
-        font-size: .8em;
+        font-size: .9em;
     }
     
     .credits b {
