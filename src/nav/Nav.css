@@ -76,6 +76,10 @@ nav {
     color: var(--highlight-color);
 }
 
+.phone-nav {
+    display: none;
+}
+
 @media only screen and (max-width: 1550px) {
     .navigation {
         grid-template-columns: repeat(6, 1fr);
@@ -106,5 +110,19 @@ nav {
 @media only screen and (max-width: 900px) {
     .navigation {
         display: none;
+    }
+    .phone-nav {
+        /* position: absolute; */
+        display: block;
+
+        width: fit-content;
+        margin: auto;
+        left: 0; right: 0;
+        padding: 0 10px;
+    }
+
+    .phone-nav:focus ~ .navigation {
+        display: block;
+        height: 100vh;
     }
 }

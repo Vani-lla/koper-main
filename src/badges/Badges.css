@@ -38,4 +38,14 @@
         width: 100px;
         left: 2vw;
     }
+
+    #main-logo {
+        margin: auto;
+        width: 80px;
+        margin-top: 5px;
+    }
+
+    .badges img {
+        width: 65px;
+    }
 }

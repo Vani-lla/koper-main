@@ -7,6 +7,9 @@ export default function Nav() {
             <h1 className='main-name'>
                 II Liceum Ogólnokształcące im. Mikołaja Kopernika
             </h1>
+            <button className='phone-nav'>
+                X
+            </button>
             <div className='navigation'>
                 <div className='nav-topic' id='first-nav'>
                     <div className='drop-topic-container'>
