@@ -133,21 +133,7 @@
     width: 100%;
 }
 
-
 @keyframes article-appear {
-    from {
-        transform: scale(.7);
-        opacity: 0;
-        box-shadow: none;
-    }
-    to {
-        transition: scale(1);
-        opacity: 1;
-        box-shadow: 0 0 60px black;
-    }
-}
-
-@keyframes article-disappear {
     from {
         transform: scale(.7);
         opacity: 0;
@@ -177,6 +163,7 @@
     html {
         font-size: 14px;
     }
+    
     .articles {
         grid-template-columns: 1fr;
     }

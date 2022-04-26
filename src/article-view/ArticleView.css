@@ -20,6 +20,11 @@
     font-size: 2em;
 }
 
+
+.single-article-view > p h2 {
+    font-size: 1em;
+}
+
 .article-images {
     display: flex;
     overflow-x: scroll;

@@ -1,28 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 import './ArticleView.css'
 
+const http = new XMLHttpRequest();
+
 export default function ArticleView() {
+    const [data, setData] = useState(0);
+    const [fotos, setFotos] = useState(0);
+    const [loading, setLoading] = useState(0);
 
-    return (
-        <div className='single-article-view tile'>
-            <h1>
-                Dlaczego życie nie ma sensu?
-            </h1>
-            <div className='article-images'>
-                <div>
-                    <img src='https://i.pinimg.com/originals/59/54/b4/5954b408c66525ad932faa693a647e3f.jpg' />
+    // setLoading(true);
+
+    const id = useParams().id;
+
+    useEffect(() => {
+        const url = `https://koper.edu.pl/Api/article.php?nr=${id}`;
+
+        http.open("GET", url);
+        http.send();
+        http.onreadystatechange = () => {
+            let d = http.responseText;
+            if (http.readyState === 4) {
+                console.log(JSON.parse(d)[0]);
+                console.log(JSON.parse(d)[0].foto.split('_'));
+                setData(JSON.parse(d)[0]);
+                let f = JSON.parse(d)[0].foto.split('_');
+                f.splice(-1);
+                setFotos(f);
+                setLoading(true);
+            }
+        }
+    }, []);
+
+    if (loading) {
+        return (
+            <div className='single-article-view tile'>
+                <h1>
+                    Dlaczego życie nie ma sensu?
+                </h1>
+                <div className='article-images'>
+                    {fotos.map((ind, url) => {
+                        return (
+                            <div key={url}>
+                                <img src={`https://koper.edu.pl/podstrony/page${id}/${ind}`} />
+                            </div>
+                        )
+                    })}
                 </div>
-                <div>
-                    <img src='https://imgflip.com/s/meme/Smiling-Cat.jpg' />
-                </div>
-                <div>
-                    <img src='https://i1.sndcdn.com/artworks-RJG4jIrv6lZwWkQH-cWi6nA-t500x500.jpg' />
-                </div>
+    
+                <p dangerouslySetInnerHTML={{__html: data.tresc}}>
+                </p>
             </div>
-
-            <p>
-                Ta pustka. Nie da się jej opisać. Tylko jej następstwa. Uczepienie się mojego życia. Bezsilność. Pragnienie przeszłości. Zacząć wszystko od nowa, uniknąć błędów, jakich błędów? Skazany na pustkę? To jest mi pisane. Przeznaczenie. I wszystkie te bzdury. Najmniejszy ruch jest trudny. Oczy wbite w ziemię. Obojętność na wszystko. Dla mnie nie ma ani poniedziałku, ani niedzieli: są tylko dni popychające się w bezładzie. Wszyscy są jakoś zadowoleni ze swoich miejsc, które im wyznaczyło przeznaczenie i łańcuch genów. Wykonują skromnie, co im każe Wielka Entropia. A ja obrażam się na los, na swoje ograniczenie, na Pana Boga. Pragnę czegoś, czego nie mogę. Marzę o tym, czego nie będzie. Tonę w sześćdziesięciu litrach własnej trującej wody, ja, zdefektowany ssak dwunożny.
-            </p>
-        </div>
-    )
+        )
+    } else {
+        <div className='loader'/>
+    }
 }

@@ -23,7 +23,7 @@ function App() {
                     </Fragment>
                 }>
                 </Route>
-                <Route path='/article/*' element={
+                <Route path='/article/:id' element={
                     <Fragment>
                         <Badges />
                         <RightDesktop />

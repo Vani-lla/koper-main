@@ -7,17 +7,11 @@ nav {
     /* overflow: hidden; */
 }
 
-.main-name {
-    text-align: center;
-    margin-top: 1vh;
-    font-size: 1.6em;
-}
-
 .navigation {
     margin-top: 1vh;
     padding: 10px;
     display: grid;
-    grid-template-columns: 1.5fr repeat(4, 1fr) 1.5fr;
+    grid-template-columns: .1fr repeat(5, 1fr) .1fr;
     grid-gap: 20px;
 }
 
@@ -36,9 +30,10 @@ nav {
     font-size: 1em;
     font-weight: 800;
 
-    cursor: default;
+    /* cursor: default; */
     transition: .5s;
     user-select: none;
+    text-decoration: none;
 }
 
 .dropdown {
@@ -58,6 +53,7 @@ nav {
     text-decoration: none;
     font-size: .76em;
     padding: .4em 1em;
+    user-select: none;
 }
 
 .dropdown a:hover {
@@ -82,7 +78,7 @@ nav {
 
 @media only screen and (max-width: 1550px) {
     .navigation {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: .01fr repeat(5, 1fr) .01fr;
     }
 }
 
@@ -102,17 +98,30 @@ nav {
     }
 
     .navigation {
-        grid-template-columns: .1fr repeat(4, 1fr) .1fr;
+        grid-template-columns: .1fr repeat(5, 1fr) .1fr;
         /* padding: 0; */
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .navigation {
-        display: none;
+@keyframes phone-nav-appear {
+    from {
+        opacity: 0;
+        transform: scaleY(.9) translateY(-10%);
     }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }    
+}
+
+@media only screen and (max-width: 900px) {
+    .no-scroll {
+        overflow: hidden;
+    }
+
     .phone-nav {
-        /* position: absolute; */
+        position: absolute;
         display: block;
 
         width: fit-content;
@@ -121,8 +130,30 @@ nav {
         padding: 0 10px;
     }
 
-    .phone-nav:focus ~ .navigation {
-        display: block;
+    .phone-active {
+        background-color: rgba(14, 0, 33, 0.7);
+
+        display: flex;
+        align-items: baseline;
         height: 100vh;
+        transition: opacity .2s;
+
+        animation-name: phone-nav-appear;
+        animation-duration: 2s;
+    }
+
+    /* .navigation {
+        display: none;
+    } */
+
+    .phone-d {
+        opacity: 0;
+        height: 0;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+
     }
 }
