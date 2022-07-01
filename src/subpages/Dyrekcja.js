@@ -3,7 +3,7 @@ import './Dyrekcja.css'
 
 export default function Dyrekcja() {
     return (
-        <div className='headquarters tile'>
+        <div className='headquarters tile central'>
             <div className='sensei-room'>
                 <div className='member'>
                     <div className='role'>

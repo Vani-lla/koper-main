@@ -1,9 +1,7 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import './Nav.css'
 
 export default function Nav() {
-    const [phoneActive, setphoneActive] = useState(0)
-
     return (
         <Fragment>
             <nav className='tile'>
@@ -18,9 +16,8 @@ export default function Nav() {
                             </div>
                             <div className='dropdown'>
                                 <a href='/historia'>Historia</a>
-                                <a href='/dyrekcja'>Dyrekcja Szkoły</a>
-                                <a href='#'>Grono Pedagogiczne</a>
-                                <a href='#'>Pedagog Szkolny</a>
+                                <a href='/grono'>Grono Pedagogiczne</a>
+                                <a href='/pedagog'>Pedagog Szkolny</a>
                                 <a href='#'>Rada Rodziców</a>
                                 <a href='#'>Samorząd</a>
                                 <a href='#'>Biblioteka</a>

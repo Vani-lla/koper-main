@@ -1,0 +1,21 @@
+.pedagog {
+    display: flex;
+    height: 500px;
+}
+
+.pedagog-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.for-smb {
+    display: flex;
+    flex-direction: column;
+}
+
+.for-smb * {
+    text-align: center;
+}
+

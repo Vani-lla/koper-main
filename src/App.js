@@ -9,6 +9,7 @@ import ArticleView from './article-view/ArticleView';
 import Recrutation from './recrutation/Recrutation';
 import History from './subpages/History';
 import Dyrekcja from './subpages/Dyrekcja';
+import Pedagog from './subpages/Pedagog';
 
 function App() {
     return (
@@ -58,11 +59,20 @@ function App() {
                     </Fragment>
                 }>
                 </Route>
-                <Route path='/dyrekcja' element={
+                <Route path='/grono' element={
                     <Fragment>
                         <Badges />
                         <RightDesktop />
                         <Dyrekcja />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/pedagog' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <Pedagog />
                         <Nav />
                     </Fragment>
                 }>

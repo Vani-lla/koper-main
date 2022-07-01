@@ -14,11 +14,3 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
 }
-
-.main-header {
-    position: absolute;
-    width: 100vw;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 15px;
-}

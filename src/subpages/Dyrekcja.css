@@ -1,7 +1,4 @@
 .headquarters {
-    position: absolute;
-    top: var(--top-height); left: 22.5vw;
-    width: 55vw;
     display: flex;
     flex-direction: column;
 }

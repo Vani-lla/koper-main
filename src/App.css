@@ -6,6 +6,13 @@
     --highlight-color: rgb(255, 220, 78);
 }
 
+.central {
+    position: absolute;
+    top: var(--top-height); left: 22.5vw;
+    width: 55vw;
+}
+
+
 .e404 {
     position: fixed;
     width: fit-content; height: fit-content;
