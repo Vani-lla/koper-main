@@ -1,0 +1,70 @@
+.headquarters {
+    position: absolute;
+    top: var(--top-height); left: 22.5vw;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.sensei-room {
+    display: flex;
+}
+
+.member {
+    width: 15vw;
+    display: flex; flex-direction: column;
+    margin: auto;
+}
+
+.member > img {
+    max-width: 13vw;
+    margin: auto;
+}
+
+.member .role {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.member .description {
+    display: flex; flex-direction: column;
+    height: 150px;
+    padding-bottom: 5vh;
+}
+
+.member .description div {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.member .description b {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.headquarters > img {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+
+.teachers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subject {
+    margin-bottom: 2vh;
+}
+
+.subject-name {
+    font-size: 2.5rem;
+}
+
+.teacher-list {
+    font-size: 1.5rem;
+}

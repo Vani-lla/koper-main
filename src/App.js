@@ -7,8 +7,8 @@ import RightDesktop from './rightDesktop/rightDesktop';
 import Articles from './articles/Articles';
 import ArticleView from './article-view/ArticleView';
 import Recrutation from './recrutation/Recrutation';
-import History from './history/History';
-import Dyrekcja from './history/Dyrekcja';
+import History from './subpages/History';
+import Dyrekcja from './subpages/Dyrekcja';
 
 function App() {
     return (

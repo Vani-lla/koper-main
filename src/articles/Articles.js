@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 import './Articles.css'
-import banner from '../static/banner.png';
 
 const url = 'https://koper.edu.pl/Api/articles.php';
 const http = new XMLHttpRequest();
@@ -41,14 +40,6 @@ export default class Articles extends Component {
         } else {
             return (
                 <Fragment>
-                    <div className='school-image tile'>
-                        <img src={banner}></img>
-                    </div>
-                    <div className='article-filter'>
-                        {this.state.articleFilter === 0 ? <div className='filter-button filter-active tile'>Wszystkie</div> : <div onClick={() => { this.setState({ articleFilter: 0 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Wszystkie</div>}
-                        {this.state.articleFilter === 1 ? <div className='filter-button filter-active tile'>Sport</div> : <div onClick={() => { this.setState({ articleFilter: 1 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Sport</div>}
-                        {this.state.articleFilter === 2 ? <div className='filter-button filter-active tile'>Biblioteka</div> : <div onClick={() => { this.setState({ articleFilter: 2 }); console.log(this.state.articleFilter) }} className='filter-button tile'>Biblioteka</div>}
-                    </div>
                     <div className='articles'>
                         {this.state.data.map((article, ind) => {
                             if (this.state.articleLimit >= ind) {
