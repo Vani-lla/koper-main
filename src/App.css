@@ -10,6 +10,7 @@
     position: absolute;
     top: var(--top-height); left: 22.5vw;
     width: 55vw;
+    padding: 1vw;
 }
 
 

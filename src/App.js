@@ -10,6 +10,10 @@ import Recrutation from './recrutation/Recrutation';
 import History from './subpages/History';
 import Dyrekcja from './subpages/Dyrekcja';
 import Pedagog from './subpages/Pedagog';
+import RadaR from './subpages/RadaR';
+import SamoR from './subpages/SamoR';
+import Kontakty from './subpages/Kontakty';
+import Kalendarz from './subpages/Kalendarz';
 
 function App() {
     return (
@@ -73,6 +77,53 @@ function App() {
                         <Badges />
                         <RightDesktop />
                         <Pedagog />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/radarodzicuf' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <RadaR />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/samorzad' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <SamoR />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/biblioteka' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <SamoR />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/kontakty' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <Kontakty />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+
+
+                <Route path='/kalendarz' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <Kalendarz />
                         <Nav />
                     </Fragment>
                 }>

@@ -1,13 +1,14 @@
 .pedagog {
     display: flex;
-    height: 500px;
+    height: fit-content;
+    flex-direction: column;
 }
 
 .pedagog-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    margin: 1vh 1vw 1vh 1vw;
+    margin-bottom: 4em;
 }
 
 .for-smb {
@@ -19,3 +20,30 @@
     text-align: center;
 }
 
+.for-smb div {
+    font-size: 2em;
+    margin-bottom: .3em;
+}
+
+.for-smb ul {
+    font-size: 1.5em;
+    list-style: none;
+}
+
+.for-smb ul li {
+    margin-bottom: .2em;
+}
+
+.pedagog-sublinks ul {
+    list-style: none;
+    text-align: center;
+}
+
+.pedagog-sublinks ul li {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+.pedagog-sublinks ul li a{
+    text-decoration: none;
+}

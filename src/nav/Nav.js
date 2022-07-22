@@ -18,10 +18,10 @@ export default function Nav() {
                                 <a href='/historia'>Historia</a>
                                 <a href='/grono'>Grono Pedagogiczne</a>
                                 <a href='/pedagog'>Pedagog Szkolny</a>
-                                <a href='#'>Rada Rodziców</a>
-                                <a href='#'>Samorząd</a>
-                                <a href='#'>Biblioteka</a>
-                                <a href='#'>Kontakty</a>
+                                <a href='/radarodzicuf'>Rada Rodziców</a>
+                                <a href='/samorzad'>Samorząd</a>
+                                <a href='/biblioteka'>Biblioteka</a>
+                                <a href='/kontakty'>Kontakty</a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ export default function Nav() {
                         <div className='drop-topic-container'>
                             <div className='drop-topic'>Dokumenty</div>
                             <div className='dropdown'>
-                                <a href='#'>Kalendarz roku</a>
+                                <a href='/kalendarz'>Kalendarz roku</a>
                                 <a href='#'>Wykaz podręczników</a>
                                 <a href='#'>Statut</a>
                                 <a href='#'>Regulaminy</a>
