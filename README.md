@@ -1,3 +1,3 @@
 # II Liceum Ogólnokształcące im. Mikołaja Kopernika
 
-Deployment on [heroku](https://koper-main.herokuapp.com/)
+Deployment on [Vercel](https://koper-main.vercel.app/)
