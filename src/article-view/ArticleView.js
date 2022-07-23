@@ -36,7 +36,7 @@ export default function ArticleView() {
         return (
             <div className='single-article-view tile'>
                 <h1>
-                    Dlaczego życie nie ma sensu?
+                    {data.tytul}
                 </h1>
                 <div className='article-images'>
                     {fotos.map((ind, url) => {

@@ -30,25 +30,45 @@ export default function Nav() {
                             <div className='drop-topic'>Dokumenty</div>
                             <div className='dropdown'>
                                 <a href='/kalendarz'>Kalendarz roku</a>
-                                <a href='#'>Wykaz podręczników</a>
-                                <a href='#'>Statut</a>
-                                <a href='#'>Regulaminy</a>
-                                <a href='#'>Deklaracja dostępności</a>
-                                <a href='#'>Wycieczki</a>
-                                <a href='#'>Dla nauczyciela</a>
-                                <a href='#'>Dla ucznia</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='nav-topic'>
-                        <div className='drop-topic-container'>
-                            <div className='drop-topic'>Życie szkoły</div>
-                            <div className='dropdown'>
-                                <a href='#'>Wszystkie artykuły</a>
-                                <a href='#'>Olimpiady i konkursy</a>
-                                <a href='#'>Wyjazdy i wycieczki</a>
-                                <a href='#'>Inne wydarzenia</a>
-                                <a href='#'>Portal</a>
+                                <div className='sub-drop'>
+                                    <div className='sub-drop-topic'>Wykaz podręczników</div>
+                                    <div className='sub-dropdown'>
+                                        <a href='https://koper.edu.pl/pdf/klasa1v14.doc'> Klasa I</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa2v14.docx'>Klasa II</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa3v14.docx'>Klasa III</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Klasa IV</a>
+                                    </div>
+                                </div>
+                                <a href='https://bip-v1-files.superszkolna.pl/sites/43657/wiadomosci/200390/files/statut_6_10_2021.pdf'>Statut</a>
+                                <div className='sub-drop'>
+                                    <div className='sub-drop-topic'>Regulaminy</div>
+                                    <div className='sub-dropdown'>
+                                        <a href='https://koper.edu.pl/pdf/klasa1v14.doc'> Zakładowego funduszu socjalnego</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa2v14.docx'>Ceremoniał szkolny</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa3v14.docx'>Ewakuacji</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Program wychowawczo profilaktyczny</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Biblioteki szkolnej</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Przyznawania stypendium</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Rady Pedagogicznej</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Samorzadu Uczniowskiego</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Studniowki</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Wycieczek szkolnych</a>
+                                    </div>
+                                </div>
+                                <a href='/deklaracjadost'>Deklaracja dostępności</a>
+                                <div className='sub-drop'>
+                                    <div className='sub-drop-topic'>Wycieczki</div>
+                                    <div className='sub-dropdown'>
+                                        <a href='https://koper.edu.pl/pdf/klasa1v14.doc'> Karta wycieczki</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa2v14.docx'>Organizacja wycieczki za granicą</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa3v14.docx'>Zgoda Rodziców</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Regulamin wycieczki</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Oświadczenie o zmianie dat</a>
+                                        <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Znajomość języka obcego</a>
+                                    </div>
+                                </div>
+                                <a href='/nauczyciel'>Dla nauczyciela</a>
+                                <a href='/uczen'>Dla ucznia</a>
                             </div>
                         </div>
                     </div>

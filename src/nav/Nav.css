@@ -11,7 +11,7 @@ nav {
     margin-top: 1vh;
     padding: 10px;
     display: grid;
-    grid-template-columns: .1fr repeat(5, 1fr) .1fr;
+    grid-template-columns: .1fr repeat(4, 1fr) .1fr;
     grid-gap: 20px;
 }
 
@@ -54,6 +54,39 @@ nav {
     font-size: .76em;
     padding: .4em 1em;
     user-select: none;
+    white-space: nowrap;
+}
+
+.sub-drop-topic {
+    text-decoration: none;
+    font-size: .76em;
+    padding: .4em 1em;
+    user-select: none;
+}
+
+.sub-drop-topic:hover {
+    background-color: rgba(100, 100, 100, .2);
+}
+
+.sub-dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10em; 
+    /* top: 1.8em; */
+    width: fit-content;
+    background-color: rgba(14, 0, 33, 1);
+
+    transform: scaleX(.95) translateX(-10%) translateY(-1.56em);
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.sub-drop:hover .sub-dropdown {
+    transform: translateY(-1.56em);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .dropdown a:hover {
@@ -78,7 +111,7 @@ nav {
 
 @media only screen and (max-width: 1550px) {
     .navigation {
-        grid-template-columns: .01fr repeat(5, 1fr) .01fr;
+        grid-template-columns: .01fr repeat(4, 1fr) .01fr;
     }
 }
 
@@ -98,7 +131,7 @@ nav {
     }
 
     .navigation {
-        grid-template-columns: .1fr repeat(5, 1fr) .1fr;
+        grid-template-columns: .1fr repeat(4, 1fr) .1fr;
         /* padding: 0; */
     }
 }

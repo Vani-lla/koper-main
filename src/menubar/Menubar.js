@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import './Menubar.css'
-import rickroll from '../static/rickroll.mp3'
 
 export default function Menubar() {
     return (

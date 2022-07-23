@@ -14,6 +14,8 @@ import RadaR from './subpages/RadaR';
 import SamoR from './subpages/SamoR';
 import Kontakty from './subpages/Kontakty';
 import Kalendarz from './subpages/Kalendarz';
+import Nauczyciel from './subpages/Nauczyciel';
+import Uczen from './subpages/Uczen';
 
 function App() {
     return (
@@ -124,6 +126,33 @@ function App() {
                         <Badges />
                         <RightDesktop />
                         <Kalendarz />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/deklaracjadost' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <Kalendarz />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/nauczyciel' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <Nauczyciel />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/uczen' element={
+                    <Fragment>
+                        <Badges />
+                        <RightDesktop />
+                        <Uczen />
                         <Nav />
                     </Fragment>
                 }>
