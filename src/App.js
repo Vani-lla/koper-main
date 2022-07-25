@@ -16,6 +16,8 @@ import Kontakty from './subpages/Kontakty';
 import Kalendarz from './subpages/Kalendarz';
 import Nauczyciel from './subpages/Nauczyciel';
 import Uczen from './subpages/Uczen';
+import AllArticles from './articles/AllArticles';
+import Erasmus from './subpages/Erasmus';
 
 function App() {
     return (
@@ -30,11 +32,25 @@ function App() {
                     </Fragment>
                 }>
                 </Route>
-                <Route path='/article/:id' element={
+                <Route path='/artykul/:id' element={
                     <Fragment>
                         <Badges />
                         <RightDesktop />
                         <ArticleView />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/artykuly' element={
+                    <Fragment>
+                        <AllArticles />
+                        <Nav />
+                    </Fragment>
+                }>
+                </Route>
+                <Route path='/artykuly/:filter' element={
+                    <Fragment>
+                        <AllArticles />
                         <Nav />
                     </Fragment>
                 }>
@@ -52,6 +68,7 @@ function App() {
                     <Fragment>
                         <Badges />
                         <RightDesktop />
+                        <Erasmus />
                         <Nav />
                     </Fragment>
                 }>

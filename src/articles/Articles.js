@@ -39,67 +39,29 @@ export default class Articles extends Component {
             return <div className='loader' />
         } else {
             return (
-                <Fragment>
-                    <div className='articles'>
-                        {this.state.data.map((article, ind) => {
-                            if (this.state.articleLimit >= ind) {
-                                if (this.state.articleFilter === 1 && article.kategoria === "sport") {
-                                    return (
-                                        <a key={ind} className='tile' href={`article/${article.id}`}>
-                                            <div className='article'>
-                                                <div className='glow-container'>
-                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article' />
-                                                </div>
-                                                <div className='article-title'>
-                                                    <h1>
-                                                        {article.tytul}
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    );
-                                } else if (this.state.articleFilter === 2 && article.kategoria === "biblio") {
-                                    return (
-                                        <a key={ind} className='tile' href={`article/${article.id}`}>
-                                            <div className='article'>
-                                                <div className='glow-container'>
-                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article' />
-                                                </div>
-                                                <div className='article-title'>
-                                                    <h1>
-                                                        {article.tytul}
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    );
-                                } else if (this.state.articleFilter === 0) {
-                                    return (
-                                        <a key={ind} className='tile' href={`article/${article.id}`}>
-                                            <div className='article'>
-                                                <div className='glow-container' id={"glow" + article.id.toString()}>
-                                                    <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article' onError={() => { document.getElementById("glow" + article.id.toString()).style = "display: none;" }} />
-                                                </div>
-                                                <div className='article-title'>
-                                                    <h1>
-                                                        {article.tytul}
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    );
-                                }
-                            }
-                            return 
-                        })}
+                <div className='articles'>
+                    {this.state.data.map((article, ind) => {
+                        return (
+                            <a key={ind} className='tile' href={`artykul/${article.id}`}>
+                                <div className='article'>
+                                    <div className='glow-container' id={"glow" + article.id.toString()}>
+                                        <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article'
+                                            onError={() => { document.getElementById("glow" + article.id.toString()).style = "display: none;" }} />
+                                    </div>
+                                    <div className='article-title'>
+                                        <h1>
+                                            {article.tytul}
+                                        </h1>
+                                    </div>
+                                </div>
+                            </a>
+                        );
+                    })}
 
-                        <a href='/articles' className='see-more tile'>
-                            {/* <div> */}
-                            <h1>Zobacz wszystkie artykuły</h1>
-                            {/* </div> */}
-                        </a>
-                    </div>
-                </Fragment>
+                    <a href='/artykuly' className='see-more tile'>
+                        <h1>Zobacz wszystkie artykuły</h1>
+                    </a>
+                </div>
             )
         }
     }
