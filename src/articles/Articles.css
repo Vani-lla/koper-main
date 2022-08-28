@@ -1,16 +1,13 @@
 .articles {
-    position: absolute;
-    /* --top-height: 250px; */
-    top: var(--top-height); left: 22.5vw;
-    width: 55vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2vw;
 
     padding-bottom: 2vw;
 }
 
-.articles a, .allarticles a {
+.articles a,
+.allarticles a {
     text-decoration: none;
     transition: .25s;
 
@@ -18,7 +15,8 @@
     animation-duration: 1s, 1s;
 }
 
-.articles a:hover, .allarticles a:hover {
+.articles a:hover,
+.allarticles a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 80px black;
 }
@@ -26,7 +24,7 @@
 .article {
     width: 100%;
     height: 100%;
-    padding: 1vw;
+    padding: 1em;
     display: flex;
     flex-direction: column;
 }
@@ -67,7 +65,7 @@
     align-items: center;
 }
 
-.see-more  h1 {
+.see-more h1 {
     text-align: center;
     width: 100%;
 }
@@ -99,7 +97,8 @@
 
 .loader {
     position: absolute;
-    width: 100px; height: 100px;
+    width: 100px;
+    height: 100px;
     left: calc(50vw - 50px);
     top: 70vh;
     background-color: rgba(14, 0, 33, 0.3);
@@ -119,6 +118,7 @@
         opacity: 0;
         box-shadow: none;
     }
+
     to {
         transition: scale(1);
         opacity: 1;
@@ -130,20 +130,17 @@
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
 @media only screen and (max-width: 1210px) {
-    * {
-        --top-height: 200px;
-    }
-
     html {
         font-size: 14px;
     }
-    
+
     .articles {
         grid-template-columns: 1fr;
     }
@@ -162,17 +159,20 @@
         font-size: 10px;
     }
 
-    * {
-        --top-height: 150px;
-    }
-
-    .articles {
-        left: calc(4vw + 100px);
-        width: calc(92vw - 100px);
-        row-gap: 4vw;
-    }
-
     .articles a:hover {
         transform: scale(1.02);
+        box-shadow: 0 0 20px black;
     }
+
+    .article {
+        padding: 1em;
+        padding-bottom: calc(15px);
+        min-height: 4em;
+    }
+
+    .articles a,
+    .allarticles a {
+        animation: none;
+    }
+
 }

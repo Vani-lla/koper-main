@@ -1,13 +1,12 @@
 .badges {
-    position: absolute;
-    left: 5vw; top: var(--top-height);
-    padding: 1vw; width: 15vw; max-width: 240px;
-    display: flex; flex-direction: column;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    height: fit-content;
 }
 
 #main-logo {
-    width: 12vw; max-width: 200px;
     margin-bottom: 40px;
 }
 
@@ -23,6 +22,7 @@
 .round-badge {
     border-radius: 50%;
     background-color: rgba(14, 0, 33, 0.6);
+    aspect-ratio: 1 / 1;
 
     transition: .2s;
 }
@@ -33,19 +33,31 @@
     box-shadow: 0 0 10px black;
 }
 
-@media only screen and (max-width: 900px) {
-    .badges {
-        width: 100px;
-        left: 2vw;
-    }
+.phone-badges {
+    display: none;
+}
 
-    #main-logo {
-        margin: auto;
-        width: 80px;
-        margin-top: 5px;
+@media only screen and (max-width: 900px) {
+    #main-logo-a {
+        display: none;
     }
 
     .badges img {
-        width: 65px;
+        min-width: 65px;
+    }
+
+    .phone-badges {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 4em;
+    }
+
+    .phone-badges a {
+        min-width: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
     }
 }

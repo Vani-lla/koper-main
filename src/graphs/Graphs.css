@@ -1,15 +1,16 @@
 #graphs {
     /* position: absolute; */
     /* right: 5vw; top: 25vh; */
+    width: 100%;
     padding: 1vw;
     display: flex;
-    width: 15vw; height: 330px; max-width: 240px;
+    height: 330px;
 
     font-size: 1rem;
 }
 
 .graph {
-    width: 100%; height: 200px;
+    height: 200px;
 }
 
 .value-line {
@@ -20,7 +21,7 @@
 
 .base-line {
     height: 2px;
-    width: 100%;
+    width: inherit;
     background-color: white;
 }
 

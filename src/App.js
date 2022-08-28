@@ -25,18 +25,22 @@ function App() {
             <Routes>
                 <Route path='' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Articles />
+                        <div className='main'>
+                            <Badges />
+                            <Articles />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/artykul/:id' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <ArticleView />
+                        <div className='main'>
+                            <Badges />
+                            <ArticleView />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
@@ -57,81 +61,99 @@ function App() {
                 </Route>
                 <Route path='/rekrutacja' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Recrutation />
+                        <div className='main'>
+                            <Badges />
+                            <Recrutation />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/erasmus' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Erasmus />
+                        <div className='main'>
+                            <Badges />
+                            <Erasmus />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/historia' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <History />
+                        <div className='main'>
+                            <Badges />
+                            <History />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/grono' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Dyrekcja />
+                        <div className='main'>
+                            <Badges />
+                            <Dyrekcja />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/pedagog' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Pedagog />
+                        <div className='main'>
+                            <Badges />
+                            <Pedagog />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/radarodzicuf' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <RadaR />
+                        <div className='main'>
+                            <Badges />
+                            <RadaR />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/samorzad' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <SamoR />
+                        <div className='main'>
+                            <Badges />
+                            <SamoR />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/biblioteka' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <SamoR />
+                        <div className='main'>
+                            <Badges />
+                            <SamoR />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/kontakty' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Kontakty />
+                        <div className='main'>
+                            <Badges />
+                            <Kontakty />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
@@ -140,36 +162,44 @@ function App() {
 
                 <Route path='/kalendarz' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Kalendarz />
+                        <div className='main'>
+                            <Badges />
+                            <Kalendarz />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/deklaracjadost' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Kalendarz />
+                        <div className='main'>
+                            <Badges />
+                            <Kalendarz />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/nauczyciel' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Nauczyciel />
+                        <div className='main'>
+                            <Badges />
+                            <Nauczyciel />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>
                 </Route>
                 <Route path='/uczen' element={
                     <Fragment>
-                        <Badges />
-                        <RightDesktop />
-                        <Uczen />
+                        <div className='main'>
+                            <Badges />
+                            <Uczen />
+                            <RightDesktop />
+                        </div>
                         <Nav />
                     </Fragment>
                 }>

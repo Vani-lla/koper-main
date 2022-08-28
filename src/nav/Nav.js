@@ -1,13 +1,29 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import './Nav.css'
+import logo from '../static/logo_new.png'
 
 export default function Nav() {
+    useEffect(() => {
+        const checkbox = document.getElementById('phone-nav');
+        checkbox.addEventListener('change', (status) => {
+            if (status.target.checked) {
+                document.body.style.overflowY = 'hidden';
+            } else {
+                document.body.style.overflowY = 'auto';
+            }
+        })
+    }, [])
+
     return (
         <Fragment>
             <nav className='tile'>
-                <button className='phone-nav tile' >
-                    X
-                </button>
+                <div className='phone-logo'>
+                    <a href='/' >
+                        <img src={logo} alt='main logo' />
+                    </a>
+                </div>
+                <input id='phone-nav' type='checkbox' />
+                <label className='phone-nav' for='phone-nav'>|||</label>
                 <div className='navigation'>
                     <div className='nav-topic' id='first-nav'>
                         <div className='drop-topic-container'>

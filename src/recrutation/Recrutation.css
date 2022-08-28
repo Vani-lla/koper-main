@@ -1,7 +1,4 @@
 .recrutation {
-    position: absolute;
-    top: 25vh; left: calc(10vw + 200px);
-    width: calc(80vw - 420px);
     padding: 30px;
     z-index: -1;
 }

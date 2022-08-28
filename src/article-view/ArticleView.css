@@ -1,13 +1,3 @@
-.single-article-view {
-    position: absolute;
-    top: var(--top-height); left: 25vw;
-    width: 50vw;
-    padding: 30px;
-    z-index: -1;
-
-    font-size: 1rem;
-}
-
 .single-article-view > h1 {
     text-align: center;
     font-size: 3em;
@@ -50,5 +40,11 @@
     .single-article-view > p {
         font-size: 1.5em;
     }
+}
 
+@media only screen and (max-width: 900px) {
+    .single-article-view {
+        padding: 1em;
+        height: fit-content;
+    }
 }

@@ -1,8 +1,4 @@
 .history-tiles {
-    position: absolute;
-    top: var(--top-height);
-    width: 50vw;
-    left: 25vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2vw;

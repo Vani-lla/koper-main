@@ -36,19 +36,23 @@ export default class Articles extends Component {
 
     render() {
         if (this.state.loading) {
-            return <div className='loader' />
+            return <div><div className='loader' /></div>
         } else {
             return (
                 <div className='articles'>
                     {this.state.data.map((article, ind) => {
                         return (
                             <a key={ind} className='tile' href={`artykul/${article.id}`}>
-                                <div className='article'>
+                                <div className='article' id={"article" + article.id.toString()}>
                                     <div className='glow-container' id={"glow" + article.id.toString()}>
                                         <img className='article-glow' src={`https://koper.edu.pl/podstrony/page${article.id}/glow.jpg`} alt='Article'
-                                            onError={() => { document.getElementById("glow" + article.id.toString()).style = "display: none;" }} />
+                                            onError={() => {
+                                                document.getElementById("glow" + article.id.toString()).style = "display: none;";
+                                                document.getElementById("title" + article.id.toString()).style.transform = 'none';
+                                                document.getElementById("article" + article.id.toString()).style.paddingBottom = '1em';
+                                            }} />
                                     </div>
-                                    <div className='article-title'>
+                                    <div className='article-title' id={"title" + article.id.toString()}>
                                         <h1>
                                             {article.tytul}
                                         </h1>
