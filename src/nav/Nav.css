@@ -19,6 +19,14 @@ nav {
     display: none;
 }
 
+.nav-check {
+    display: none;
+}
+
+.phone-nav {
+    display: none;
+}
+
 #first-nav {
     grid-column-start: 2;
 }
@@ -69,9 +77,6 @@ nav {
     user-select: none;
 }
 
-.sub-drop-topic:hover {
-    background-color: rgba(100, 100, 100, .2);
-}
 
 .sub-dropdown {
     position: absolute;
@@ -88,10 +93,16 @@ nav {
     transition: .3s;
 }
 
-.sub-drop:hover .sub-dropdown {
-    transform: translateY(-1.56em);
-    opacity: 1;
-    pointer-events: auto;
+@media screen and (min-width: 900px) {
+    .sub-drop-topic:hover {
+        background-color: rgba(100, 100, 100, .2);
+    }
+
+    .sub-drop:hover .sub-dropdown {
+        transform: translateY(-1.56em);
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
 .dropdown a:hover {
@@ -108,14 +119,6 @@ nav {
 
 .nav-topic:hover .drop-topic {
     color: var(--highlight-color);
-}
-
-.phone-nav {
-    display: none;
-}
-
-#phone-nav {
-    display: none;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -159,6 +162,7 @@ nav {
         width: 100%;
         justify-content: space-around;
         padding-top: 1vh;
+        background-color: rgb(14, 0, 33) !important;
     }
 
     .phone-logo img {
@@ -172,9 +176,11 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: baseline;
-        padding-top: 3em;
         height: 0vw;
         pointer-events: none;
+        transform: translateY(3em);
+
+        overflow-y: auto;
 
         transition: all .2s;
     }
@@ -182,16 +188,16 @@ nav {
     .phone-nav {
         display: flex;
         position: absolute;
-        width: 15vw;
-        padding-left: .5em;
-        height: 100%;
+        width: 1em;
+        height: 1em;
         right: 0;
         border: none;
         background-color: transparent;
         font-size: 1.5em;
-        /* transform: rotate(90deg); */
+        transform: rotate(90deg);
         text-align: center;
         margin-top: .5em;
+        margin-right: .5em;
     }
 
     #phone-nav {
@@ -204,6 +210,10 @@ nav {
         opacity: 1;
         height: 100vh;
         pointer-events: all;
+    }
+
+    .drop-topic {
+        font-size: 1.2em;
     }
 
     .dropdown {
@@ -219,7 +229,7 @@ nav {
         left: 0;
         right: 0;
         padding: 0;
-        font-size: 1em;
+        font-size: 1.1em;
 
         transform: scaleY(.90);
         transform-origin: top;
@@ -259,22 +269,28 @@ nav {
 
         opacity: 0;
         pointer-events: none;
-        transition: .5s;
+        transition: .3s;
     }
 
     .sub-dropdown a {
         white-space: normal;
+        color: rgba(255, 255, 255, .8);
     }
 
-    .sub-drop:hover .sub-dropdown {
+    .nav-check:checked~.sub-dropdown {
         opacity: 1;
         pointer-events: auto;
         transform: none;
         max-height: 100vh;
-        
+
         animation-name: dropdown-delay;
         animation-duration: .3s;
     }
+
+    .nav-check:checked~.sub-drop-topic {
+        background-color: rgba(100, 100, 100, .2);
+    }
+
 
     @keyframes dropdown-delay {
         from {

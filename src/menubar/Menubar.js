@@ -26,7 +26,7 @@ export default function Menubar() {
                     </a>
                 </div>
                 <div>
-                    <a title='Ta ikona jeszcze nic nie robi, do zrobienia. Coś tu będzie' className='flash-text-nav' /* onClick={() => { new Audio(rickroll).play()}} */ style={{cursor: 'pointer'}}>
+                    <a title='Ta ikona jeszcze nic nie robi, do zrobienia. Coś tu będzie' href='#coś' className='flash-text-nav'>
                         <i className='fa fa-heart' aria-hidden="true"></i>
                     </a>
                 </div>

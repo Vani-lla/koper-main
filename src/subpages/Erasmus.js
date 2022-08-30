@@ -12,7 +12,7 @@ export default function Erasmus() {
 
             <div className='era-article tile'>
                 <h1>RELACJE I INNOWACJE 2020-1-PL01-KA101-080255</h1>
-                <img src='https://koper.edu.pl/_images/LogoMM.png' alt='article image' />
+                <img src='https://koper.edu.pl/_images/LogoMM.png' alt='article' />
                 <p>
                     Dwuletni projekt realizowany w ramach akcji KA1 "Mobilność kadry edukacji szkolnej" w obszarze edukacji szkolnej mający na celu poprawę jakości pracy szkoły dzięki udziałowi pracowników w mobilnościach zagranicznych takich jak kursy i szkolenia, w trakcie których podnoszą oni własne kompetencje zawodowe.
                     Planowane działania to kursy dotyczące innowacji w metodyce nauczania i psychologii, podnoszenia kompetencji językowych, budowania pozytywnych relacji, skutecznego zarządzania klasą i rozwiązywania konfliktów, pracy z uczniem zdolnym i z problemami w nauce oraz pracy metodą CLIL. Projekt będzie realizowany w okresie sierpień 2020 - sierpień 2022.

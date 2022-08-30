@@ -33,3 +33,7 @@
 .kontakty .info {
     font-size: 1.7em;
 }
+
+.kontakty img {
+    max-width: 100%;
+}

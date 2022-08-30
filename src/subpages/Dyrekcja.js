@@ -37,7 +37,7 @@ export default function Dyrekcja() {
                 </div>
             </div>
 
-            <img id='villains' src='https://koper.edu.pl/_images/grono2.jpg' />
+            <img id='villains' src='https://koper.edu.pl/_images/grono2.jpg' alt='villains'/>
 
             <div className='teachers'>
                 <div className='subject'>

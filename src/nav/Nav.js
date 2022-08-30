@@ -22,11 +22,12 @@ export default function Nav() {
                         <img src={logo} alt='main logo' />
                     </a>
                 </div>
-                <input id='phone-nav' type='checkbox' />
-                <label className='phone-nav' for='phone-nav'>|||</label>
+                <input id='phone-nav' className='nav-check' type='checkbox' />
+                <label className='phone-nav' htmlFor='phone-nav'>|||</label>
                 <div className='navigation'>
                     <div className='nav-topic' id='first-nav'>
-                        <div className='drop-topic-container'>
+                        <label className='drop-topic-container'>
+                            <input className='nav-check' type='checkbox' />
                             <div className='drop-topic'>
                                 O szkole
                             </div>
@@ -39,10 +40,11 @@ export default function Nav() {
                                 <a href='/biblioteka'>Biblioteka</a>
                                 <a href='/kontakty'>Kontakty</a>
                             </div>
-                        </div>
+                        </label>
                     </div>
                     <div className='nav-topic'>
-                        <div className='drop-topic-container'>
+                        <label className='drop-topic-container'>
+                            <input className='nav-check' type='checkbox' />
                             <div className='drop-topic'>Dokumenty</div>
                             <div className='dropdown'>
                                 <a href='/kalendarz'>Kalendarz roku</a>
@@ -56,7 +58,8 @@ export default function Nav() {
                                     </div>
                                 </div>
                                 <a href='https://bip-v1-files.superszkolna.pl/sites/43657/wiadomosci/200390/files/statut_6_10_2021.pdf'>Statut</a>
-                                <div className='sub-drop'>
+                                <label className='sub-drop'>
+                                    <input className='nav-check' type='checkbox' />
                                     <div className='sub-drop-topic'>Regulaminy</div>
                                     <div className='sub-dropdown'>
                                         <a href='https://koper.edu.pl/pdf/klasa1v14.doc'> Zakładowego funduszu socjalnego</a>
@@ -70,9 +73,10 @@ export default function Nav() {
                                         <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Studniowki</a>
                                         <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Wycieczek szkolnych</a>
                                     </div>
-                                </div>
+                                </label>
                                 <a href='/deklaracjadost'>Deklaracja dostępności</a>
-                                <div className='sub-drop'>
+                                <label className='sub-drop'>
+                                    <input className='nav-check' type='checkbox' />
                                     <div className='sub-drop-topic'>Wycieczki</div>
                                     <div className='sub-dropdown'>
                                         <a href='https://koper.edu.pl/pdf/klasa1v14.doc'> Karta wycieczki</a>
@@ -82,17 +86,18 @@ export default function Nav() {
                                         <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Oświadczenie o zmianie dat</a>
                                         <a href='https://koper.edu.pl/pdf/klasa4v14.docx'>Znajomość języka obcego</a>
                                     </div>
-                                </div>
+                                </label>
                                 <a href='/nauczyciel'>Dla nauczyciela</a>
                                 <a href='/uczen'>Dla ucznia</a>
                             </div>
-                        </div>
+                        </label>
+
                     </div>
                     <div className='nav-topic'>
-                        <a href='#' className='drop-topic'>Plany lekcji</a>
+                        <a href='#plany' className='drop-topic'>Plany lekcji</a>
                     </div>
                     <div className='nav-topic'>
-                        <a href='#' className='drop-topic'>Zastępstwa</a>
+                        <a href='#zastępstwa' className='drop-topic'>Zastępstwa</a>
                     </div>
                 </div>
             </nav>

@@ -6,7 +6,7 @@ export default function History() {
         <div className='history-tiles'>
             <div className='article tile'>
                 <div className='glow-container'>
-                    <img className='article-glow' src='https://koper.edu.pl/szkola/szkola2.jpg' alt='Article image' />
+                    <img className='article-glow' src='https://koper.edu.pl/szkola/szkola2.jpg' alt='Article ' />
                 </div>
                 <div className='article-title'>
                     <h1>
@@ -20,7 +20,7 @@ export default function History() {
 
             <div className='article tile'>
                 <div className='glow-container'>
-                    <img className='article-glow' src='https://koper.edu.pl/szkola/koperrr.jpg' alt='Article image' />
+                    <img className='article-glow' src='https://koper.edu.pl/szkola/koperrr.jpg' alt='Article ' />
                 </div>
                 <div className='article-title'>
                     <h1>
@@ -34,7 +34,7 @@ export default function History() {
 
             <div className='article tile'>
                 <div className='glow-container'>
-                    <img className='article-glow' src='https://koper.edu.pl/szkola/file2.jpg' alt='Article image' />
+                    <img className='article-glow' src='https://koper.edu.pl/szkola/file2.jpg' alt='Article ' />
                 </div>
                 <div className='article-title'>
                     <h1>
@@ -51,7 +51,7 @@ export default function History() {
 
             <div className='article tile'>
                 <div className='glow-container'>
-                    <img className='article-glow' src='https://koper.edu.pl/szkola/tablica.jpg' alt='Article image' />
+                    <img className='article-glow' src='https://koper.edu.pl/szkola/tablica.jpg' alt='Article ' />
                 </div>
                 <div className='article-title'>
                     <h1>
@@ -65,7 +65,7 @@ export default function History() {
 
             <div className='article tile'>
                 <div className='glow-container'>
-                    <img className='article-glow' src='https://koper.edu.pl/szkola/szkola1.jpg' alt='Article image' />
+                    <img className='article-glow' src='https://koper.edu.pl/szkola/szkola1.jpg' alt='Article ' />
                 </div>
                 <div className='article-title'>
                     <h1>
@@ -79,7 +79,7 @@ export default function History() {
 
             <div className='article tile'>
                 <div className='glow-container'>
-                    <img className='article-glow' src='https://koper.edu.pl/szkola/rudolfa.jpg' alt='Article image' />
+                    <img className='article-glow' src='https://koper.edu.pl/szkola/rudolfa.jpg' alt='Article ' />
                 </div>
                 <div className='article-title'>
                     <h1>

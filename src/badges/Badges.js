@@ -13,16 +13,16 @@ export default function Badges() {
                 <img id="main-logo" src={logo} alt='main logo' />
             </a>
             <a href='https://licea.perspektywy.pl/2022/rankings'>
-                <img src={silver} alt='silver badge' />
+                <img src={silver} alt='silver badge'/>
             </a>
             <a className='round-badge' href='/rekrutacja'>
-                <img src={rekrut} />
+                <img src={rekrut} alt='badge'/>
             </a>
             <a className='round-badge' href='https://uonetplus.vulcan.net.pl/powiatcieszynski'>
-                <img src={dziennik} />
+                <img src={dziennik} alt='badge'/>
             </a>
             <div className='phone-badges'>
-                <a className='round-badge' href='#'>
+                <a className='round-badge' href='https://www.instagram.com/lo_koper/'>
                     <i className='fab fa-facebook-square'></i>
                 </a>
                 <a className='round-badge' href='https://www.instagram.com/lo_koper/'>
@@ -39,7 +39,7 @@ export default function Badges() {
                 </a>
             </div>
             <a className='round-badge' href='/erasmus'>
-                <img src={erasmus} />
+                <img src={erasmus} alt="Erasmus"/>
             </a>
         </div>
     )

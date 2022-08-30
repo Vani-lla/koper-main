@@ -10,7 +10,7 @@ export default function Kontakty() {
 
             <div className='tile'>
                 <h1 className='school-name'>Trifels-Gymnasium - Niemcy</h1>
-                <img src='https://koper.edu.pl/zagranica/annw/logo.jpg' />
+                <img src='https://koper.edu.pl/zagranica/annw/logo.jpg' alt='Contact'/>
                 <p>
                     Projekty przygotowywane są we współpracy z organizacją polsko-niemiecką PNWM z Warszawy.
                     Pomaga ona dofinansowując wymiany międzyszkolne pomiędzy Evangelisches Trifels-Gymnasium w Annweiler a II LO im. M. Kopernika w Cieszynie.
@@ -30,7 +30,7 @@ export default function Kontakty() {
 
             <div className='tile'>
                 <h1 className='school-name'>Lukio Teuvan - Finlandia</h1>
-                <img src='https://koper.edu.pl/zagranica/finlandia/image.jpg' />
+                <img src='https://koper.edu.pl/zagranica/finlandia/image.jpg' alt='Contact'/>
                 <p>
                     <h3>Historia wymiany</h3>
                     Wymianę uczniów między Lukio Teuvan a II LO im. M. Kopernika zapoczątkowały kontakty nauczycieli w ramach realizacji projektu szkolnego programu Socrates Comenius1 "Woda jest życiem". Na pierwszym spotkaniu roboczym, które odbyło się w październiku 2004r.
@@ -48,7 +48,7 @@ export default function Kontakty() {
 
             <div className='tile'>
                 <h1 className='school-name'>Lycée Saint-Michel - Francja</h1>
-                <img src='https://koper.edu.pl/zagranica/finlandia/image.jpg' />
+                <img src='https://koper.edu.pl/zagranica/francja/szkola.jpg' alt='Contact'/>
                 <p>
                     <h3>Historia wymiany</h3>
                     Pierwsza wymiana z Francją została zorganizowana w marcu 2009 roku. Zrodziła się dzięki prywatnym kontaktom. Katolickie Liceum Saint-Michel w małej miejscowości Solesmes, leżącej w regionie Nord-Pas-de-Calais przyjęło propozycję współpracy z naszą szkołą.
